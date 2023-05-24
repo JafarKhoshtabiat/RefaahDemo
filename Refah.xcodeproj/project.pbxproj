@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C1BCEF329FE57AF00E805B3 /* extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BCEF229FE57AF00E805B3 /* extension+UIViewController.swift */; };
+		0C1BCEF529FE6B6F00E805B3 /* PhoneNumberOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BCEF429FE6B6F00E805B3 /* PhoneNumberOTPViewController.swift */; };
+		0C1BCEF729FE712B00E805B3 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BCEF629FE712B00E805B3 /* CustomSegue.swift */; };
+		0C1BCEF929FE715400E805B3 /* CustomSegueWithBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BCEF829FE715400E805B3 /* CustomSegueWithBack.swift */; };
+		0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */; };
+		0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */; };
+		0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */; };
+		0C7D8EB329FD8CC600D4291F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D8EB229FD8CC600D4291F /* Colors.xcassets */; };
+		0CA3372229F9AC1E00A40E39 /* RegistrationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3372129F9AC1E00A40E39 /* RegistrationStatusViewController.swift */; };
+		0CA3372429F9D31000A40E39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3372329F9D31000A40E39 /* LoginViewController.swift */; };
+		0CA3DF4E29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF4D29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift */; };
+		0CA3DF5029FC330D0059DEB5 /* NewAccountCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF4F29FC330D0059DEB5 /* NewAccountCreatedViewController.swift */; };
+		0CA3DF5429FC38E80059DEB5 /* ChooseBankAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF5329FC38E80059DEB5 /* ChooseBankAccountsViewController.swift */; };
+		0CA3DF5729FC526A0059DEB5 /* BankAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF5529FC526A0059DEB5 /* BankAccountTableViewCell.swift */; };
+		0CA3DF5829FC526A0059DEB5 /* BankAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3DF5629FC526A0059DEB5 /* BankAccountTableViewCell.xib */; };
+		0CA3DF5A29FC57FB0059DEB5 /* SetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF5929FC57FB0059DEB5 /* SetPasswordViewController.swift */; };
+		0CA4E31529F8823C008D7FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA4E31429F8823C008D7FBB /* AppDelegate.swift */; };
+		0CA4E31729F8823C008D7FBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA4E31629F8823C008D7FBB /* SceneDelegate.swift */; };
+		0CA4E31929F8823C008D7FBB /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA4E31829F8823C008D7FBB /* LoadingViewController.swift */; };
+		0CA4E31C29F8823C008D7FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA4E31A29F8823C008D7FBB /* Main.storyboard */; };
+		0CA4E31E29F8823D008D7FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CA4E31D29F8823D008D7FBB /* Assets.xcassets */; };
+		0CA4E32129F8823D008D7FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA4E31F29F8823D008D7FBB /* LaunchScreen.storyboard */; };
+		0CF5AA1A29FAC36F0003901B /* RepresentiveCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5AA1929FAC36F0003901B /* RepresentiveCodeViewController.swift */; };
+		0CF5AA1C29FB1FF30003901B /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5AA1B29FB1FF30003901B /* PhoneNumberViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C1BCEF229FE57AF00E805B3 /* extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIViewController.swift"; sourceTree = "<group>"; };
+		0C1BCEF429FE6B6F00E805B3 /* PhoneNumberOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberOTPViewController.swift; sourceTree = "<group>"; };
+		0C1BCEF629FE712B00E805B3 /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		0C1BCEF829FE715400E805B3 /* CustomSegueWithBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegueWithBack.swift; sourceTree = "<group>"; };
+		0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPostalAddressViewController.swift; sourceTree = "<group>"; };
+		0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCodeViewController.swift; sourceTree = "<group>"; };
+		0C7D8EB229FD8CC600D4291F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		0CA3372129F9AC1E00A40E39 /* RegistrationStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStatusViewController.swift; sourceTree = "<group>"; };
+		0CA3372329F9D31000A40E39 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0CA3DF4D29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadNationalCardPhotoViewController.swift; sourceTree = "<group>"; };
+		0CA3DF4F29FC330D0059DEB5 /* NewAccountCreatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountCreatedViewController.swift; sourceTree = "<group>"; };
+		0CA3DF5329FC38E80059DEB5 /* ChooseBankAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBankAccountsViewController.swift; sourceTree = "<group>"; };
+		0CA3DF5529FC526A0059DEB5 /* BankAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountTableViewCell.swift; sourceTree = "<group>"; };
+		0CA3DF5629FC526A0059DEB5 /* BankAccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankAccountTableViewCell.xib; sourceTree = "<group>"; };
+		0CA3DF5929FC57FB0059DEB5 /* SetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordViewController.swift; sourceTree = "<group>"; };
+		0CA4E31129F8823C008D7FBB /* Refah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Refah.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CA4E31429F8823C008D7FBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CA4E31629F8823C008D7FBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0CA4E31829F8823C008D7FBB /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		0CA4E31B29F8823C008D7FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CA4E31D29F8823D008D7FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CA4E32029F8823D008D7FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CA4E32229F8823D008D7FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CF5AA1929FAC36F0003901B /* RepresentiveCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentiveCodeViewController.swift; sourceTree = "<group>"; };
+		0CF5AA1B29FB1FF30003901B /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CA4E30E29F8823C008D7FBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C0A09BC2A1C943700D1595D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0CA4E31D29F8823D008D7FBB /* Assets.xcassets */,
+				0C7D8EB229FD8CC600D4291F /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0C0A09BD2A1C944800D1595D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0CA4E31A29F8823C008D7FBB /* Main.storyboard */,
+				0CA4E31F29F8823D008D7FBB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0C53EAEE2A0B91F5003F8E5B /* Login Flow */ = {
+			isa = PBXGroup;
+			children = (
+				0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */,
+				0CA3372329F9D31000A40E39 /* LoginViewController.swift */,
+			);
+			path = "Login Flow";
+			sourceTree = "<group>";
+		};
+		0C7D8EB429FDAEDE00D4291F /* Registration Flow */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3DF5929FC57FB0059DEB5 /* SetPasswordViewController.swift */,
+				0CF5AA1929FAC36F0003901B /* RepresentiveCodeViewController.swift */,
+				0CF5AA1B29FB1FF30003901B /* PhoneNumberViewController.swift */,
+				0CA3DF4D29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift */,
+				0CA3DF5329FC38E80059DEB5 /* ChooseBankAccountsViewController.swift */,
+				0CA3DF5529FC526A0059DEB5 /* BankAccountTableViewCell.swift */,
+				0CA3DF5629FC526A0059DEB5 /* BankAccountTableViewCell.xib */,
+				0C1BCEF429FE6B6F00E805B3 /* PhoneNumberOTPViewController.swift */,
+				0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */,
+				0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */,
+				0CA3DF4F29FC330D0059DEB5 /* NewAccountCreatedViewController.swift */,
+			);
+			path = "Registration Flow";
+			sourceTree = "<group>";
+		};
+		0C8C98E12A1CBD4F006330FC /* Loading&Status Flow */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3372129F9AC1E00A40E39 /* RegistrationStatusViewController.swift */,
+				0C8C98E42A1E14D9006330FC /* Loading Screen */,
+			);
+			path = "Loading&Status Flow";
+			sourceTree = "<group>";
+		};
+		0C8C98E32A1E1219006330FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CA4E31829F8823C008D7FBB /* LoadingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0C8C98E42A1E14D9006330FC /* Loading Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0C8C98E32A1E1219006330FC /* Controllers */,
+			);
+			path = "Loading Screen";
+			sourceTree = "<group>";
+		};
+		0CA4E30829F8823C008D7FBB = {
+			isa = PBXGroup;
+			children = (
+				0CA4E31329F8823C008D7FBB /* Refah */,
+				0CA4E31229F8823C008D7FBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CA4E31229F8823C008D7FBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CA4E31129F8823C008D7FBB /* Refah.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CA4E31329F8823C008D7FBB /* Refah */ = {
+			isa = PBXGroup;
+			children = (
+				0C0A09BD2A1C944800D1595D /* Storyboards */,
+				0C0A09BC2A1C943700D1595D /* Assets */,
+				0CA4E31429F8823C008D7FBB /* AppDelegate.swift */,
+				0CA4E31629F8823C008D7FBB /* SceneDelegate.swift */,
+				0CA4E32229F8823D008D7FBB /* Info.plist */,
+				0C8C98E12A1CBD4F006330FC /* Loading&Status Flow */,
+				0C7D8EB429FDAEDE00D4291F /* Registration Flow */,
+				0C53EAEE2A0B91F5003F8E5B /* Login Flow */,
+				0C1BCEF229FE57AF00E805B3 /* extension+UIViewController.swift */,
+				0C1BCEF629FE712B00E805B3 /* CustomSegue.swift */,
+				0C1BCEF829FE715400E805B3 /* CustomSegueWithBack.swift */,
+			);
+			path = Refah;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CA4E31029F8823C008D7FBB /* Refah */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CA4E32529F8823D008D7FBB /* Build configuration list for PBXNativeTarget "Refah" */;
+			buildPhases = (
+				0CA4E30D29F8823C008D7FBB /* Sources */,
+				0CA4E30E29F8823C008D7FBB /* Frameworks */,
+				0CA4E30F29F8823C008D7FBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Refah;
+			productName = Refah;
+			productReference = 0CA4E31129F8823C008D7FBB /* Refah.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CA4E30929F8823C008D7FBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0CA4E31029F8823C008D7FBB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 0CA4E30C29F8823C008D7FBB /* Build configuration list for PBXProject "Refah" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CA4E30829F8823C008D7FBB;
+			productRefGroup = 0CA4E31229F8823C008D7FBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CA4E31029F8823C008D7FBB /* Refah */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CA4E30F29F8823C008D7FBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA3DF5829FC526A0059DEB5 /* BankAccountTableViewCell.xib in Resources */,
+				0CA4E32129F8823D008D7FBB /* LaunchScreen.storyboard in Resources */,
+				0C7D8EB329FD8CC600D4291F /* Colors.xcassets in Resources */,
+				0CA4E31E29F8823D008D7FBB /* Assets.xcassets in Resources */,
+				0CA4E31C29F8823C008D7FBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CA4E30D29F8823C008D7FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA4E31929F8823C008D7FBB /* LoadingViewController.swift in Sources */,
+				0CA4E31529F8823C008D7FBB /* AppDelegate.swift in Sources */,
+				0CA4E31729F8823C008D7FBB /* SceneDelegate.swift in Sources */,
+				0CA3372429F9D31000A40E39 /* LoginViewController.swift in Sources */,
+				0C1BCEF329FE57AF00E805B3 /* extension+UIViewController.swift in Sources */,
+				0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */,
+				0C1BCEF929FE715400E805B3 /* CustomSegueWithBack.swift in Sources */,
+				0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */,
+				0CA3DF4E29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift in Sources */,
+				0C1BCEF529FE6B6F00E805B3 /* PhoneNumberOTPViewController.swift in Sources */,
+				0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */,
+				0CF5AA1A29FAC36F0003901B /* RepresentiveCodeViewController.swift in Sources */,
+				0CA3DF5A29FC57FB0059DEB5 /* SetPasswordViewController.swift in Sources */,
+				0CF5AA1C29FB1FF30003901B /* PhoneNumberViewController.swift in Sources */,
+				0CA3DF5429FC38E80059DEB5 /* ChooseBankAccountsViewController.swift in Sources */,
+				0CA3DF5729FC526A0059DEB5 /* BankAccountTableViewCell.swift in Sources */,
+				0CA3DF5029FC330D0059DEB5 /* NewAccountCreatedViewController.swift in Sources */,
+				0C1BCEF729FE712B00E805B3 /* CustomSegue.swift in Sources */,
+				0CA3372229F9AC1E00A40E39 /* RegistrationStatusViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0CA4E31A29F8823C008D7FBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CA4E31B29F8823C008D7FBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CA4E31F29F8823D008D7FBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CA4E32029F8823D008D7FBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CA4E32329F8823D008D7FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CA4E32429F8823D008D7FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CA4E32629F8823D008D7FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V572B7767L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Refah/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.refahbankproject.Refah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CA4E32729F8823D008D7FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V572B7767L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Refah/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.refahbankproject.Refah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CA4E30C29F8823C008D7FBB /* Build configuration list for PBXProject "Refah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CA4E32329F8823D008D7FBB /* Debug */,
+				0CA4E32429F8823D008D7FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CA4E32529F8823D008D7FBB /* Build configuration list for PBXNativeTarget "Refah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CA4E32629F8823D008D7FBB /* Debug */,
+				0CA4E32729F8823D008D7FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CA4E30929F8823C008D7FBB /* Project object */;
+}
