@@ -23,6 +23,7 @@ class CustomSegue: UIStoryboardSegue {
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
             toViewController.view.transform = CGAffineTransform.identity
         }, completion: { success in
+            // TODO -> solve warning here [Window] Manually adding the rootViewController's view to the view hierarchy is no longer supported. Please allow UIWindow to add the rootViewController's view to the view hierarchy itself.
             containerView?.window?.rootViewController = toViewController
         })
     }
