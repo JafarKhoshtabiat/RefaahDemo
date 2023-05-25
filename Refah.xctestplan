@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "D62467BC-696F-47B6-9681-83F5D45AE1C8",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Refah.xcodeproj",
+      "identifier" : "0CA4E31029F8823C008D7FBB",
+      "name" : "Refah"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Refah.xcodeproj",
+        "identifier" : "0CAFB92C2A1FFB85002F0C72",
+        "name" : "RefahTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -32,9 +32,20 @@
 		0CAFB9242A1EAE43002F0C72 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFB9232A1EAE43002F0C72 /* LaunchView.swift */; };
 		0CAFB9262A1EC6CE002F0C72 /* extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFB9252A1EC6CE002F0C72 /* extension+UIColor.swift */; };
 		0CAFB9282A1ECD98002F0C72 /* ViewWithProgressViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFB9272A1ECD98002F0C72 /* ViewWithProgressViewProtocol.swift */; };
+		0CAFB9372A1FFD66002F0C72 /* LaunchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFB9362A1FFD66002F0C72 /* LaunchViewTests.swift */; };
 		0CF5AA1A29FAC36F0003901B /* RepresentiveCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5AA1929FAC36F0003901B /* RepresentiveCodeViewController.swift */; };
 		0CF5AA1C29FB1FF30003901B /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5AA1B29FB1FF30003901B /* PhoneNumberViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CAFB9312A1FFB85002F0C72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CA4E30929F8823C008D7FBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CA4E31029F8823C008D7FBB;
+			remoteInfo = Refah;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C1BCEF229FE57AF00E805B3 /* extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIViewController.swift"; sourceTree = "<group>"; };
@@ -64,12 +75,22 @@
 		0CAFB9232A1EAE43002F0C72 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		0CAFB9252A1EC6CE002F0C72 /* extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIColor.swift"; sourceTree = "<group>"; };
 		0CAFB9272A1ECD98002F0C72 /* ViewWithProgressViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithProgressViewProtocol.swift; sourceTree = "<group>"; };
+		0CAFB92D2A1FFB85002F0C72 /* RefahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAFB9362A1FFD66002F0C72 /* LaunchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewTests.swift; sourceTree = "<group>"; };
+		0CAFB9382A2000F5002F0C72 /* Refah.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Refah.xctestplan; sourceTree = "<group>"; };
 		0CF5AA1929FAC36F0003901B /* RepresentiveCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentiveCodeViewController.swift; sourceTree = "<group>"; };
 		0CF5AA1B29FB1FF30003901B /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0CA4E30E29F8823C008D7FBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAFB92A2A1FFB85002F0C72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -153,7 +174,9 @@
 		0CA4E30829F8823C008D7FBB = {
 			isa = PBXGroup;
 			children = (
+				0CAFB9382A2000F5002F0C72 /* Refah.xctestplan */,
 				0CA4E31329F8823C008D7FBB /* Refah */,
+				0CAFB92E2A1FFB85002F0C72 /* RefahTests */,
 				0CA4E31229F8823C008D7FBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				0CA4E31129F8823C008D7FBB /* Refah.app */,
+				0CAFB92D2A1FFB85002F0C72 /* RefahTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +218,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0CAFB92E2A1FFB85002F0C72 /* RefahTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CAFB9362A1FFD66002F0C72 /* LaunchViewTests.swift */,
+			);
+			path = RefahTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,6 +246,24 @@
 			productReference = 0CA4E31129F8823C008D7FBB /* Refah.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0CAFB92C2A1FFB85002F0C72 /* RefahTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CAFB9332A1FFB85002F0C72 /* Build configuration list for PBXNativeTarget "RefahTests" */;
+			buildPhases = (
+				0CAFB9292A1FFB85002F0C72 /* Sources */,
+				0CAFB92A2A1FFB85002F0C72 /* Frameworks */,
+				0CAFB92B2A1FFB85002F0C72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CAFB9322A1FFB85002F0C72 /* PBXTargetDependency */,
+			);
+			name = RefahTests;
+			productName = RefahTests;
+			productReference = 0CAFB92D2A1FFB85002F0C72 /* RefahTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,6 +276,10 @@
 				TargetAttributes = {
 					0CA4E31029F8823C008D7FBB = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					0CAFB92C2A1FFB85002F0C72 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 0CA4E31029F8823C008D7FBB;
 					};
 				};
 			};
@@ -243,6 +297,7 @@
 			projectRoot = "";
 			targets = (
 				0CA4E31029F8823C008D7FBB /* Refah */,
+				0CAFB92C2A1FFB85002F0C72 /* RefahTests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +312,13 @@
 				0C7D8EB329FD8CC600D4291F /* Colors.xcassets in Resources */,
 				0CA4E31E29F8823D008D7FBB /* Assets.xcassets in Resources */,
 				0CA4E31C29F8823C008D7FBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAFB92B2A1FFB85002F0C72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +354,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0CAFB9292A1FFB85002F0C72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAFB9372A1FFD66002F0C72 /* LaunchViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CAFB9322A1FFB85002F0C72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CA4E31029F8823C008D7FBB /* Refah */;
+			targetProxy = 0CAFB9312A1FFB85002F0C72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0CA4E31A29F8823C008D7FBB /* Main.storyboard */ = {
@@ -484,6 +562,42 @@
 			};
 			name = Release;
 		};
+		0CAFB9342A1FFB85002F0C72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V572B7767L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.refahbankproject.RefahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refah.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Refah";
+			};
+			name = Debug;
+		};
+		0CAFB9352A1FFB85002F0C72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V572B7767L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.refahbankproject.RefahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refah.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Refah";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -501,6 +615,15 @@
 			buildConfigurations = (
 				0CA4E32629F8823D008D7FBB /* Debug */,
 				0CA4E32729F8823D008D7FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CAFB9332A1FFB85002F0C72 /* Build configuration list for PBXNativeTarget "RefahTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAFB9342A1FFB85002F0C72 /* Debug */,
+				0CAFB9352A1FFB85002F0C72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
