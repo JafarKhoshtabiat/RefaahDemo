@@ -8,6 +8,8 @@
 import UIKit
 
 extension UIColor {
+    static let carnival = UIColor(named: "Carnival")
+    static let deepSeaDream = UIColor(named: "DeepSeaDream")
     static let extinctVolcano = UIColor(named: "ExtinctVolcano")
     static let flameHawkfish = UIColor(named: "FlameHawkfish")
     static let fuelTown = UIColor(named: "FuelTown")
