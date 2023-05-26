@@ -92,17 +92,9 @@ class LaunchView: UIView {
                                                             multiplier: 1, constant: 0)
         self.addConstraints([progressViewTopConstraint, progressViewRightConstraint, progressViewHeightConstraint, progressViewLeftConstraint])
     }
-        
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 }
 
-extension LaunchView: ViewWithProgressViewProtocol {
+extension LaunchView: LaunchViewWithProgressViewProtocol {
     func setProgressOfProgressView(_ progress: Float, animated: Bool) {
         self.progressView.setProgress(progress, animated: animated)
     }

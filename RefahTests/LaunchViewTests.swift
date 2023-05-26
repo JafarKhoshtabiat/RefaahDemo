@@ -9,7 +9,7 @@ import XCTest
 @testable import Refah
 
 final class LaunchViewTests: XCTestCase {
-    private var sut: ViewWithProgressViewProtocol!
+    private var sut: LaunchViewWithProgressViewProtocol!
     
     override func setUp() {
         super.setUp()

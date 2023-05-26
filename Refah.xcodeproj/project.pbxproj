@@ -31,7 +31,7 @@
 		0CA4E32129F8823D008D7FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA4E31F29F8823D008D7FBB /* LaunchScreen.storyboard */; };
 		0CAFB9242A1EAE43002F0C72 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFB9232A1EAE43002F0C72 /* LaunchView.swift */; };
 		0CAFB9262A1EC6CE002F0C72 /* extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFB9252A1EC6CE002F0C72 /* extension+UIColor.swift */; };
-		0CAFB9282A1ECD98002F0C72 /* ViewWithProgressViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFB9272A1ECD98002F0C72 /* ViewWithProgressViewProtocol.swift */; };
+		0CAFB9282A1ECD98002F0C72 /* LaunchViewWithProgressViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFB9272A1ECD98002F0C72 /* LaunchViewWithProgressViewProtocol.swift */; };
 		0CAFB9372A1FFD66002F0C72 /* LaunchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFB9362A1FFD66002F0C72 /* LaunchViewTests.swift */; };
 		0CF5AA1A29FAC36F0003901B /* RepresentiveCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5AA1929FAC36F0003901B /* RepresentiveCodeViewController.swift */; };
 		0CF5AA1C29FB1FF30003901B /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5AA1B29FB1FF30003901B /* PhoneNumberViewController.swift */; };
@@ -74,7 +74,7 @@
 		0CA4E32229F8823D008D7FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CAFB9232A1EAE43002F0C72 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		0CAFB9252A1EC6CE002F0C72 /* extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIColor.swift"; sourceTree = "<group>"; };
-		0CAFB9272A1ECD98002F0C72 /* ViewWithProgressViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithProgressViewProtocol.swift; sourceTree = "<group>"; };
+		0CAFB9272A1ECD98002F0C72 /* LaunchViewWithProgressViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewWithProgressViewProtocol.swift; sourceTree = "<group>"; };
 		0CAFB92D2A1FFB85002F0C72 /* RefahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAFB9362A1FFD66002F0C72 /* LaunchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewTests.swift; sourceTree = "<group>"; };
 		0CAFB9382A2000F5002F0C72 /* Refah.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Refah.xctestplan; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 		0CAFB9222A1EAE13002F0C72 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0CAFB9272A1ECD98002F0C72 /* ViewWithProgressViewProtocol.swift */,
+				0CAFB9272A1ECD98002F0C72 /* LaunchViewWithProgressViewProtocol.swift */,
 				0CAFB9232A1EAE43002F0C72 /* LaunchView.swift */,
 			);
 			path = Views;
@@ -339,7 +339,7 @@
 				0CAFB9262A1EC6CE002F0C72 /* extension+UIColor.swift in Sources */,
 				0C1BCEF929FE715400E805B3 /* CustomSegueWithBack.swift in Sources */,
 				0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */,
-				0CAFB9282A1ECD98002F0C72 /* ViewWithProgressViewProtocol.swift in Sources */,
+				0CAFB9282A1ECD98002F0C72 /* LaunchViewWithProgressViewProtocol.swift in Sources */,
 				0CA3DF4E29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift in Sources */,
 				0C1BCEF529FE6B6F00E805B3 /* PhoneNumberOTPViewController.swift in Sources */,
 				0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */,

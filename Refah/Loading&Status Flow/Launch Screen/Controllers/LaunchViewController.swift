@@ -8,7 +8,7 @@
 import UIKit
 
 class LaunchViewController: UIViewController {
-    private var launchView: ViewWithProgressViewProtocol = LaunchView()
+    private var launchView: LaunchViewWithProgressViewProtocol = LaunchView()
     
     private func mockProgress() {
         for i in 1...4{
@@ -16,7 +16,7 @@ class LaunchViewController: UIViewController {
                 self.launchView.setProgressOfProgressView(0.25 * Float(i), animated: true)
                 
                 if i == 4 {
-                    self.performSegue(withIdentifier: "customSegueId", sender: nil)
+                    self.performSegue(withIdentifier: "Launch_To_RegistrationStatus", sender: nil)
                 }
             }
         }

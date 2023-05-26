@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ViewWithProgressViewProtocol where Self: UIView {
+protocol LaunchViewWithProgressViewProtocol where Self: UIView {
     var progressView: UIProgressView { get }
     
     func setProgressOfProgressView(_ progress: Float, animated: Bool)
