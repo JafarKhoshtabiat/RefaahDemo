@@ -92,10 +92,8 @@ extension RepresentiveCodeView: RepresentiveCodeViewProtocol {
     func representiveCodeAvailabilityUpdated(isAvailable: Bool) {
         if isAvailable {
             self.representiveCodeAvailabilityButton.setBackgroundImage(nil, for: .normal)
-            print("remove pic")
         } else {
             self.representiveCodeAvailabilityButton.setBackgroundImage(UIImage(named: "RedTic_22_22"), for: .normal)
-            print("add pic")
         }
     }
 }
