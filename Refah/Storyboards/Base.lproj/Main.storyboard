@@ -40,8 +40,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="MeH-rB-UdY"/>
                     <connections>
-                        <segue destination="vY2-9R-0KZ" kind="custom" identifier="RegistrationStatus_to_RepresentiveCode" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="eJP-f5-gfb"/>
                         <segue destination="QhE-61-FrI" kind="custom" identifier="RegistrationStatus_to_Login" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="ULC-oL-k2P"/>
+                        <segue destination="vY2-9R-0KZ" kind="custom" identifier="RegistrationStatus_to_RepresentiveCode" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="bVr-ST-BUN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aku-UZ-iyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -55,84 +55,11 @@
                     <view key="view" contentMode="scaleToFill" id="DAZ-As-9Q6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ساخت حساب کاربری" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDX-bf-bFk" userLabel="CreateNewAccount">
-                                <rect key="frame" x="122.66666666666667" y="79" width="147.66666666666663" height="21.666666666666671"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لطفا کد معرف خود را به درستی در کادر زیر وارد نمائید." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufs-fY-v0p" userLabel="RepresentativeCodePrompt">
-                                <rect key="frame" x="30" y="140.66666666666666" width="333" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.28627450980392155" green="0.31372549019607843" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="کد معرف" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="auT-mt-ROI" userLabel="RepresentiveCode">
-                                <rect key="frame" x="30" y="177.66666666666666" width="333" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="KfY-2x-dDV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwe-Wr-YHi" userLabel="RepresentiveCodeAvailability">
-                                <rect key="frame" x="341" y="247.66666666666663" width="22" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="2vh-14-Gl7"/>
-                                    <constraint firstAttribute="height" constant="22" id="mrf-Fk-i3x"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="representiveCodeAvailabilityButtonToggled:" destination="vY2-9R-0KZ" eventType="touchUpInside" id="3CM-gh-L7Q"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="کد معرف ندارم." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6V-9x-95b" userLabel="RepresentiveCodeNotAvailable">
-                                <rect key="frame" x="256.66666666666669" y="251.66666666666666" width="74.333333333333314" height="14.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.28627450980392155" green="0.31372549019607843" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcH-od-sc5" userLabel="Next">
-                                <rect key="frame" x="30" y="728" width="333" height="50"/>
-                                <color key="backgroundColor" red="0.92549019607843142" green="0.52941176470588236" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="4sK-hr-cFH"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="مرحله بعد"/>
-                                <connections>
-                                    <action selector="nextButtonPressed:" destination="vY2-9R-0KZ" eventType="touchUpInside" id="MSO-JM-s1R"/>
-                                    <segue destination="0to-gp-7PU" kind="custom" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="gNO-1Y-6Nd"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Bef-Wu-qCQ"/>
                         <color key="backgroundColor" red="0.94509803921568625" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="f6V-9x-95b" firstAttribute="centerY" secondItem="lwe-Wr-YHi" secondAttribute="centerY" id="91G-gr-QVo"/>
-                            <constraint firstItem="Bef-Wu-qCQ" firstAttribute="trailing" secondItem="gcH-od-sc5" secondAttribute="trailing" constant="30" id="D2h-FL-cBs"/>
-                            <constraint firstItem="lwe-Wr-YHi" firstAttribute="top" secondItem="auT-mt-ROI" secondAttribute="bottom" constant="20" id="HhJ-gL-REe"/>
-                            <constraint firstItem="Bef-Wu-qCQ" firstAttribute="bottom" secondItem="gcH-od-sc5" secondAttribute="bottom" constant="40" id="LHe-xN-0MI"/>
-                            <constraint firstItem="gcH-od-sc5" firstAttribute="centerX" secondItem="Bef-Wu-qCQ" secondAttribute="centerX" id="Q6H-aQ-YTX"/>
-                            <constraint firstItem="auT-mt-ROI" firstAttribute="centerX" secondItem="Bef-Wu-qCQ" secondAttribute="centerX" id="Rs7-mC-80Y"/>
-                            <constraint firstItem="lwe-Wr-YHi" firstAttribute="trailing" secondItem="auT-mt-ROI" secondAttribute="trailing" id="W6Z-tZ-a3T"/>
-                            <constraint firstItem="Bef-Wu-qCQ" firstAttribute="trailing" secondItem="Ufs-fY-v0p" secondAttribute="trailing" constant="30" id="csq-af-LiH"/>
-                            <constraint firstItem="gDX-bf-bFk" firstAttribute="top" secondItem="Bef-Wu-qCQ" secondAttribute="top" constant="20" id="jVo-Wi-8FO"/>
-                            <constraint firstItem="auT-mt-ROI" firstAttribute="trailing" secondItem="Ufs-fY-v0p" secondAttribute="trailing" id="sUu-mM-Rgl"/>
-                            <constraint firstItem="auT-mt-ROI" firstAttribute="top" secondItem="Ufs-fY-v0p" secondAttribute="bottom" constant="20" id="uP3-JC-id7"/>
-                            <constraint firstItem="Ufs-fY-v0p" firstAttribute="centerX" secondItem="Bef-Wu-qCQ" secondAttribute="centerX" id="vPX-s1-01m"/>
-                            <constraint firstItem="gDX-bf-bFk" firstAttribute="centerX" secondItem="Bef-Wu-qCQ" secondAttribute="centerX" id="xnt-x1-db8"/>
-                            <constraint firstItem="lwe-Wr-YHi" firstAttribute="leading" secondItem="f6V-9x-95b" secondAttribute="trailing" constant="10" id="xvL-FQ-Unz"/>
-                            <constraint firstItem="Ufs-fY-v0p" firstAttribute="top" secondItem="gDX-bf-bFk" secondAttribute="bottom" constant="40" id="yeg-Uy-elT"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="nextButton" destination="gcH-od-sc5" id="TQ6-AG-cIN"/>
-                        <outlet property="representiveCodeAvailabilityButton" destination="lwe-Wr-YHi" id="cds-Rd-Jka"/>
-                        <outlet property="representiveCodeTextField" destination="auT-mt-ROI" id="kNj-Bj-amr"/>
+                        <segue destination="0to-gp-7PU" kind="custom" identifier="RepresentiveCode_to_PhoneNumber" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="5w4-Ru-gvW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="to2-lg-gZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -187,7 +114,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="مرحله بعد"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="0to-gp-7PU" eventType="touchUpInside" id="aiT-vD-Sql"/>
-                                    <action selector="nextButtonPressed:" destination="vY2-9R-0KZ" eventType="touchUpInside" id="qWf-uG-7WC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -334,7 +260,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="مرحله بعد"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="fXH-wI-2S7" eventType="touchUpInside" id="Sw7-Bh-Myc"/>
-                                    <action selector="nextButtonPressed:" destination="vY2-9R-0KZ" eventType="touchUpInside" id="dK8-TE-6bz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -416,7 +341,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="مرحله بعد"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="YR0-Pc-6xa" eventType="touchUpInside" id="MHh-TY-ogM"/>
-                                    <action selector="nextButtonPressed:" destination="vY2-9R-0KZ" eventType="touchUpInside" id="v4P-4y-8aX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -521,7 +445,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="مرحله بعد"/>
                                 <connections>
-                                    <action selector="nextButtonPressed:" destination="vY2-9R-0KZ" eventType="touchUpInside" id="LNJ-dt-FHJ"/>
                                     <action selector="nextButtonPressed:" destination="E8o-Yf-Elp" eventType="touchUpInside" id="cTp-nG-adC"/>
                                 </connections>
                             </button>
@@ -815,7 +738,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="مرحله بعد"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="LkI-vu-Pwc" eventType="touchUpInside" id="Irs-7m-QMw"/>
-                                    <action selector="nextButtonPressed:" destination="vY2-9R-0KZ" eventType="touchUpInside" id="dza-oC-d3e"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -907,7 +829,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="مرحله بعد"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="Fgf-aT-9Vx" eventType="touchUpInside" id="MWt-ve-ZHh"/>
-                                    <action selector="nextButtonPressed:" destination="vY2-9R-0KZ" eventType="touchUpInside" id="mlM-Qq-Zrt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -970,7 +891,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="دانلود"/>
                                 <connections>
                                     <action selector="downloadButtonIsPressed:" destination="xBd-M8-jA6" eventType="touchUpInside" id="DFR-ya-6NP"/>
-                                    <action selector="nextButtonPressed:" destination="vY2-9R-0KZ" eventType="touchUpInside" id="9eY-yV-izj"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbR-Ai-IqB" userLabel="ShadowView">
