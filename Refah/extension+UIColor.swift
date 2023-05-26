@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIColor {
+    static let antiFlashWhite = UIColor(named: "AntiFlashWhite")
     static let carnival = UIColor(named: "Carnival")
     static let deepSeaDream = UIColor(named: "DeepSeaDream")
     static let extinctVolcano = UIColor(named: "ExtinctVolcano")
