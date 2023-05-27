@@ -28,6 +28,7 @@
 		0C2583052A226C1F0064BD7A /* OTCTextFieldTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2583042A226C1F0064BD7A /* OTCTextFieldTag.swift */; };
 		0C2583082A22AA330064BD7A /* OTCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2583072A22AA330064BD7A /* OTCProtocol.swift */; };
 		0C25830A2A22AA5F0064BD7A /* OTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2583092A22AA5F0064BD7A /* OTC.swift */; };
+		0C25830C2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25830B2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift */; };
 		0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */; };
 		0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */; };
 		0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */; };
@@ -88,6 +89,7 @@
 		0C2583042A226C1F0064BD7A /* OTCTextFieldTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTCTextFieldTag.swift; sourceTree = "<group>"; };
 		0C2583072A22AA330064BD7A /* OTCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTCProtocol.swift; sourceTree = "<group>"; };
 		0C2583092A22AA5F0064BD7A /* OTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTC.swift; sourceTree = "<group>"; };
+		0C25830B2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeViewProtocol.swift; sourceTree = "<group>"; };
 		0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPostalAddressViewController.swift; sourceTree = "<group>"; };
 		0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCodeViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			children = (
 				0C2583022A2204550064BD7A /* OneTimeCodeView.swift */,
 				0C2583042A226C1F0064BD7A /* OTCTextFieldTag.swift */,
+				0C25830B2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				0C1BCEF329FE57AF00E805B3 /* extension+UIViewController.swift in Sources */,
 				0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */,
 				0CAFB9262A1EC6CE002F0C72 /* extension+UIColor.swift in Sources */,
+				0C25830C2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift in Sources */,
 				0C1BCEF929FE715400E805B3 /* CustomSegueWithBack.swift in Sources */,
 				0C2582E52A212B6D0064BD7A /* RegistrationFlowNextDelegate.swift in Sources */,
 				0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */,

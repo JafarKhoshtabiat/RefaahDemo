@@ -8,8 +8,7 @@
 import UIKit
 
 class OneTimeCodeViewController: UIViewController {
-    var oneTimeCodeView = OneTimeCodeView()
-//    var oneTimeCodeView: someProtocol = OneTimeCodeView()
+    var oneTimeCodeView: OneTimeCodeViewProtocol = OneTimeCodeView()
     
     var otc: OTCProtocol = OTC(size: 5)
     

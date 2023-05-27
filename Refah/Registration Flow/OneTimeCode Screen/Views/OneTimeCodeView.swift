@@ -41,8 +41,19 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
             otcTextField.translatesAutoresizingMaskIntoConstraints = false
             otcTextField.textContentType = .oneTimeCode
             otcTextField.keyboardType = .asciiCapableNumberPad
+            otcTextField.layer.cornerRadius = 5
+            otcTextField.layer.borderWidth = 2
+            otcTextField.layer.borderColor = UIColor.shadowMountain?.cgColor
+            otcTextField.backgroundColor = .white
+            otcTextField.textAlignment = .center
+            otcTextField.addTarget(self, action: #selector(self.textFieldEditingChanged), for: .editingChanged)
         }
         
+        self.otcTextFields[0].tag = OTCTextFieldTag.otc0.rawValue
+        self.otcTextFields[1].tag = OTCTextFieldTag.otc1.rawValue
+        self.otcTextFields[2].tag = OTCTextFieldTag.otc2.rawValue
+        self.otcTextFields[3].tag = OTCTextFieldTag.otc3.rawValue
+        self.otcTextFields[4].tag = OTCTextFieldTag.otc4.rawValue
         let otc0TextField = self.otcTextFields[0]
         let otc1TextField = self.otcTextFields[1]
         let otc2TextField = self.otcTextFields[2]
@@ -73,7 +84,6 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
                              otcsContainerViewHeightConstraint,
                              otcsContainerViewCenterXConstraint])
         
-        otc0TextField.translatesAutoresizingMaskIntoConstraints = false
         otcsContainerView.addSubview(otc0TextField)
         let otc0TextFieldLeftConstraint = NSLayoutConstraint(item: otc0TextField, attribute: .left,
                                                              relatedBy: .equal,
@@ -95,11 +105,7 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
                                           otc0TextFieldHeightConstraint,
                                           otc0TextFieldWidthConstraint,
                                           otc0TextFieldCenterYConstarint])
-        otc0TextField.layer.cornerRadius = 5
-        otc0TextField.layer.borderWidth = 2
-        otc0TextField.layer.borderColor = UIColor.shadowMountain?.cgColor
         
-        otc4TextField.translatesAutoresizingMaskIntoConstraints = false
         otcsContainerView.addSubview(otc4TextField)
         let otc4TextFieldRightConstraint = NSLayoutConstraint(item: otc4TextField, attribute: .right,
                                                               relatedBy: .equal,
@@ -121,11 +127,7 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
                                           otc4TextFieldHeightConstraint,
                                           otc4TextFieldWidthConstraint,
                                           otc4TextFieldCenterYConstraint])
-        otc4TextField.layer.cornerRadius = 5
-        otc4TextField.layer.borderWidth = 2
-        otc4TextField.layer.borderColor = UIColor.shadowMountain?.cgColor
         
-        otc2TextField.translatesAutoresizingMaskIntoConstraints = false
         otcsContainerView.addSubview(otc2TextField)
         let otc2TextFieldHeightConstraint = NSLayoutConstraint(item: otc2TextField, attribute: .height,
                                                                relatedBy: .equal,
@@ -147,9 +149,6 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
                                           otc2TextFieldWidthConstraint,
                                           otc2TextFieldCenterYConstraint,
                                           otc2TextFieldCenterXConstarint])
-        otc2TextField.layer.cornerRadius = 5
-        otc2TextField.layer.borderWidth = 2
-        otc2TextField.layer.borderColor = UIColor.shadowMountain?.cgColor
         
         let otc1ContainerView = UIView()
         otc1ContainerView.translatesAutoresizingMaskIntoConstraints = false
@@ -175,7 +174,6 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
                                           otc1ContainerViewBottomConstraint,
                                           otc1ContainerViewLeftConstraint])
         
-        otc1TextField.translatesAutoresizingMaskIntoConstraints = false
         otc1ContainerView.addSubview(otc1TextField)
         let otc1TextFieldHeightConstraint = NSLayoutConstraint(item: otc1TextField, attribute: .height,
                                                                relatedBy: .equal,
@@ -197,9 +195,6 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
                                           otc1TextFieldWidthConstraint,
                                           otc1TextFieldCenterYConstraint,
                                           otc1TextFieldCenterXConstraint])
-        otc1TextField.layer.cornerRadius = 5
-        otc1TextField.layer.borderWidth = 2
-        otc1TextField.layer.borderColor = UIColor.shadowMountain?.cgColor
         
         let otc3ContainerView = UIView()
         otc3ContainerView.translatesAutoresizingMaskIntoConstraints = false
@@ -225,7 +220,6 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
                                           otc3ContainerViewBottomConstraint,
                                           otc3ContainerViewLeftConstraint])
         
-        otc3TextField.translatesAutoresizingMaskIntoConstraints = false
         otc3ContainerView.addSubview(otc3TextField)
         let otc3TextFieldHeightConstraint = NSLayoutConstraint(item: otc3TextField, attribute: .height,
                                                                relatedBy: .equal,
@@ -247,38 +241,13 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
                                           otc3TextFieldWidthConstraint,
                                           otc3TextFieldCenterYConstraint,
                                           otc3TextFieldCenterXConstraint])
-        otc3TextField.layer.cornerRadius = 5
-        otc3TextField.layer.borderWidth = 2
-        otc3TextField.layer.borderColor = UIColor.shadowMountain?.cgColor
-        
-        var counter = 0
-        for otcTextField in self.otcTextFields {
-            otcTextField.backgroundColor = .white
-            otcTextField.textAlignment = .center
-            otcTextField.addTarget(self, action: #selector(self.textFieldEditingChanged), for: .editingChanged)
-            
-            switch counter {
-            case 0:
-                otcTextField.tag = OTCTextFieldTag.otc0.rawValue
-            case 1:
-                otcTextField.tag = OTCTextFieldTag.otc1.rawValue
-            case 2:
-                otcTextField.tag = OTCTextFieldTag.otc2.rawValue
-            case 3:
-                otcTextField.tag = OTCTextFieldTag.otc3.rawValue
-            case 4:
-                otcTextField.tag = OTCTextFieldTag.otc4.rawValue
-            default:
-                break
-            }
-            
-            counter += 1
-        }
-        
+                
         let tapGesture = UITapGestureRecognizer(target: self, action:  #selector (self.tapAction (_:)))
         self.addGestureRecognizer(tapGesture)
     }
-    
+}
+
+extension OneTimeCodeView: OneTimeCodeViewProtocol {
     @objc func textFieldEditingChanged(_ textField: UITextField) {
         self.otcTextFieldEditingChangedDelegate?.editingChanged(textField)
     }
@@ -317,7 +286,7 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
         }
     }
     
-    @objc func tapAction(_ sender:UITapGestureRecognizer){
+    @objc func tapAction(_ sender:UITapGestureRecognizer) {
         for otcTextField in self.otcTextFields {
             if otcTextField.isFirstResponder {
                 otcTextField.resignFirstResponder()
@@ -326,6 +295,4 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
         }
     }
 }
-
-
 
