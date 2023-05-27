@@ -34,7 +34,7 @@ class OneTimeCodeViewController: UIViewController {
 
 extension OneTimeCodeViewController: RegistrationFlowNextDelegate {
     func next() {
-        if self.otc.isAllOTCsEntered()/*isAll5OTCsEntered()*/ {
+        if self.otc.isAllOTCsEntered() {
             self.performSegue(withIdentifier: "OneTimeCode_to_NationalCode", sender: nil)
         } else {
             self.presentUIAlertController(title: "", titleColor: UIColor.flameHawkfish!, message: "کد معتبر نیست.")
