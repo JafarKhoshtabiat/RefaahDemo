@@ -8,75 +8,34 @@
 import UIKit
 
 class PhoneNumberViewController: UIViewController {
-
-    @IBOutlet weak var phoneNumberTextField: UITextField!
-    @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var phoneNumberValidLabel: UILabel!
-    
+    private var phoneNumberView: PhoneNumberViewProtocol = PhoneNumberView()
     var phoneNumberIsValid = false
-    
-    @IBAction func phoneNumberTextFieldEditingChanged(_ sender: UITextField) {
-        guard let currentText = sender.text else { self.phoneNumberValidLabel.isHidden = true; return }
-        
-        if currentText.count == "09123456789".count && currentText.starts(with: "09") {
-            self.phoneNumberIsValid = true
-            
-            self.phoneNumberValidLabel.text = "شماره موبایل معتبر است."
-            self.phoneNumberValidLabel.textColor = UIColor(named: "GreenJungle")
-            self.phoneNumberValidLabel.isHidden = false
-            self.phoneNumberTextField.resignFirstResponder()
-        } else if (!currentText.starts(with: "0") && currentText.count >= 1) ||
-                  (currentText.starts(with: "0") && !currentText.starts(with: "09") && currentText.count >= 2) ||
-                    currentText.count > "09123456789".count {
-            self.phoneNumberIsValid = false
-            
-            self.phoneNumberValidLabel.text = "شماره موبایل معتبر نیست."
-            self.phoneNumberValidLabel.textColor = UIColor(named: "Flame Hawkfish")
-            self.phoneNumberValidLabel.isHidden = false
-        } else {
-            self.phoneNumberIsValid = false
-            
-            self.phoneNumberValidLabel.isHidden = true
-        }
-    }
-    
-    @IBAction func nextButtonPressed(_ sender: UIButton) {
-        if self.phoneNumberIsValid {
-            self.performSegue(withIdentifier: "phoneNumbertoOTPSegue", sender: nil)
-        } else {
-            self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor(named: "Flame Hawkfish")!, message: "شماره موبایل معتبر نیست.")
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.phoneNumberTextField.delegate = self
-        
-        self.phoneNumberTextField.layer.cornerRadius = 20
-        self.phoneNumberTextField.layer.borderWidth = 2
-        self.phoneNumberTextField.layer.borderColor = CGColor(red: 88/255, green:88/255, blue: 88/255, alpha: 1)
-        self.phoneNumberTextField.clipsToBounds = true
-        
-        self.nextButton.layer.cornerRadius = 20
-        
-        self.phoneNumberValidLabel.isHidden = true
+        self.phoneNumberView.flowNextDelegate = self
+        self.phoneNumberView.textFieldDelegate = self
+        self.phoneNumberView.textFieldEditingChangedDelegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.phoneNumberTextField.becomeFirstResponder()
+        self.phoneNumberView.makeTextFieldFirstResponder()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func loadView() {
+        self.view = self.phoneNumberView
     }
-    */
+}
 
+extension PhoneNumberViewController: RegistrationFlowNextDelegate {
+    func next() {
+        if self.phoneNumberIsValid {
+            self.performSegue(withIdentifier: "PhoneNumber_to_OTC", sender: nil)
+        } else {
+            self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish!, message: "شماره موبایل معتبر نیست.")
+        }
+    }
 }
 
 extension PhoneNumberViewController: UITextFieldDelegate {
@@ -94,5 +53,28 @@ extension PhoneNumberViewController: UITextFieldDelegate {
         }
         
         return false
+    }
+}
+
+extension PhoneNumberViewController: TextFieldEditingChangedDelegate {
+    func editingChanged(_ textField: UITextField) {
+        guard let currentText = textField.text else {
+            self.phoneNumberView.hideValidationLabel()
+            return
+        }
+        
+        if currentText.count == "09123456789".count && currentText.starts(with: "09") {
+            self.phoneNumberIsValid = true
+            self.phoneNumberView.showValidationLabel(isValid: true)
+            textField.resignFirstResponder()
+        } else if (!currentText.starts(with: "0") && currentText.count >= 1) ||
+                  (currentText.starts(with: "0") && !currentText.starts(with: "09") && currentText.count >= 2) ||
+                    currentText.count > "09123456789".count {
+            self.phoneNumberIsValid = false
+            self.phoneNumberView.showValidationLabel(isValid: false)
+        } else {
+            self.phoneNumberIsValid = false
+            self.phoneNumberView.hideValidationLabel()
+        }
     }
 }

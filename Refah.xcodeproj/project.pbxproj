@@ -20,6 +20,10 @@
 		0C2582E92A212F570064BD7A /* RegistrationFlowViewWithTextFieldAndNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582E82A212F570064BD7A /* RegistrationFlowViewWithTextFieldAndNextButton.swift */; };
 		0C2582EB2A2147290064BD7A /* TextFieldEditingChangedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582EA2A2147290064BD7A /* TextFieldEditingChangedDelegate.swift */; };
 		0C2582ED2A2154DA0064BD7A /* RepresentiveCodeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582EC2A2154DA0064BD7A /* RepresentiveCodeViewProtocol.swift */; };
+		0C2582F62A21E07E0064BD7A /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582F52A21E07E0064BD7A /* PhoneNumberView.swift */; };
+		0C2582FA2A21EF5D0064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582F92A21EF5D0064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift */; };
+		0C2582FC2A21EF970064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582FB2A21EF970064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift */; };
+		0C2582FE2A21F76F0064BD7A /* PhoneNumberViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582FD2A21F76F0064BD7A /* PhoneNumberViewProtocol.swift */; };
 		0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */; };
 		0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */; };
 		0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */; };
@@ -72,6 +76,10 @@
 		0C2582E82A212F570064BD7A /* RegistrationFlowViewWithTextFieldAndNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewWithTextFieldAndNextButton.swift; sourceTree = "<group>"; };
 		0C2582EA2A2147290064BD7A /* TextFieldEditingChangedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEditingChangedDelegate.swift; sourceTree = "<group>"; };
 		0C2582EC2A2154DA0064BD7A /* RepresentiveCodeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentiveCodeViewProtocol.swift; sourceTree = "<group>"; };
+		0C2582F52A21E07E0064BD7A /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		0C2582F92A21EF5D0064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift; sourceTree = "<group>"; };
+		0C2582FB2A21EF970064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift; sourceTree = "<group>"; };
+		0C2582FD2A21F76F0064BD7A /* PhoneNumberViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewProtocol.swift; sourceTree = "<group>"; };
 		0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPostalAddressViewController.swift; sourceTree = "<group>"; };
 		0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCodeViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +181,8 @@
 				0C2582E22A20EDA70064BD7A /* RegistrationFlowViewWithNextButton.swift */,
 				0C2582E62A212EF90064BD7A /* RegistrationFlowViewWithTextFieldAndNextButtonProtocol.swift */,
 				0C2582E82A212F570064BD7A /* RegistrationFlowViewWithTextFieldAndNextButton.swift */,
+				0C2582F92A21EF5D0064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift */,
+				0C2582FB2A21EF970064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +208,8 @@
 		0C2582F32A21DEB10064BD7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0C2582F52A21E07E0064BD7A /* PhoneNumberView.swift */,
+				0C2582FD2A21F76F0064BD7A /* PhoneNumberViewProtocol.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -464,6 +476,8 @@
 				0C2582E52A212B6D0064BD7A /* RegistrationFlowNextDelegate.swift in Sources */,
 				0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */,
 				0CAFB9282A1ECD98002F0C72 /* LaunchViewWithProgressViewProtocol.swift in Sources */,
+				0C2582FE2A21F76F0064BD7A /* PhoneNumberViewProtocol.swift in Sources */,
+				0C2582FA2A21EF5D0064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift in Sources */,
 				0CA3DF4E29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift in Sources */,
 				0C1BCEF529FE6B6F00E805B3 /* PhoneNumberOTPViewController.swift in Sources */,
 				0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */,
@@ -480,8 +494,10 @@
 				0CA3DF5729FC526A0059DEB5 /* BankAccountTableViewCell.swift in Sources */,
 				0C2582E32A20EDA70064BD7A /* RegistrationFlowViewWithNextButton.swift in Sources */,
 				0CA3DF5029FC330D0059DEB5 /* NewAccountCreatedViewController.swift in Sources */,
+				0C2582FC2A21EF970064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift in Sources */,
 				0C1BCEF729FE712B00E805B3 /* CustomSegue.swift in Sources */,
 				0CA3372229F9AC1E00A40E39 /* RegistrationStatusViewController.swift in Sources */,
+				0C2582F62A21E07E0064BD7A /* PhoneNumberView.swift in Sources */,
 				0C2582ED2A2154DA0064BD7A /* RepresentiveCodeViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
