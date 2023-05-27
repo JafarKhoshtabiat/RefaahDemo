@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="2492" y="-27"/>
         </scene>
-        <!--Phone NumberOTP View Controller-->
+        <!--One Time Code View Controller-->
         <scene sceneID="gEk-P4-MAv">
             <objects>
-                <viewController id="fXH-wI-2S7" customClass="PhoneNumberOTPViewController" customModule="Refah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fXH-wI-2S7" customClass="OneTimeCodeViewController" customModule="Refah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6uK-KE-hjo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,11 +219,11 @@
                     </view>
                     <connections>
                         <outlet property="nextButton" destination="wdh-sR-tn2" id="CB4-fE-VzV"/>
-                        <outlet property="otc1TextField" destination="R9q-Jh-SKG" id="tiV-cr-GSq"/>
-                        <outlet property="otc2TextField" destination="Kt7-oc-CqW" id="SQM-5r-Gx3"/>
-                        <outlet property="otc3TextField" destination="py9-c7-CSi" id="JlV-IC-l0l"/>
-                        <outlet property="otc4TextField" destination="8Wf-aU-T4a" id="2la-nU-d4E"/>
-                        <outlet property="otc5TextField" destination="Vfu-7U-oFb" id="OuU-LG-XsS"/>
+                        <outlet property="otc0TextField" destination="R9q-Jh-SKG" id="tiV-cr-GSq"/>
+                        <outlet property="otc1TextField" destination="Kt7-oc-CqW" id="SQM-5r-Gx3"/>
+                        <outlet property="otc2TextField" destination="py9-c7-CSi" id="JlV-IC-l0l"/>
+                        <outlet property="otc3TextField" destination="8Wf-aU-T4a" id="2la-nU-d4E"/>
+                        <outlet property="otc4TextField" destination="Vfu-7U-oFb" id="OuU-LG-XsS"/>
                         <segue destination="YR0-Pc-6xa" kind="custom" identifier="otpToNationalIdSegue" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="66A-S2-ANj"/>
                     </connections>
                 </viewController>

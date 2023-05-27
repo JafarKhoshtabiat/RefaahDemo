@@ -17,6 +17,6 @@ extension UIColor {
     static let fuelTown = UIColor(named: "FuelTown")
     static let herbal = UIColor(named: "Herbal")
     static let juneberry = UIColor(named: "Juneberry")
-    static let shadowMountain = UIColor(named: "ShadowMountain")
+    static let shadowMountain = UIColor(named: "ShadowMountain")    // #585858 (r: 88, g: 88, b: 88)
     static let unicornSilver = UIColor(named: "UnicornSilver")
 }
