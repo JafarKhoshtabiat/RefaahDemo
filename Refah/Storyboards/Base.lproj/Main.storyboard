@@ -73,61 +73,8 @@
                     <view key="view" contentMode="scaleToFill" id="NwX-ZP-xJy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ساخت حساب کاربری" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb0-b7-954" userLabel="CreateNewAccount">
-                                <rect key="frame" x="122.66666666666667" y="79" width="147.66666666666663" height="21.666666666666671"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لطفا شماره موبایل خود را به درستی در کادر زیر وارد نمائید." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHG-AC-0u3" userLabel="PhoneNumberPrompt">
-                                <rect key="frame" x="30" y="140.66666666666666" width="333" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.28627450980000002" green="0.31372549020000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="09123456789" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XaX-rI-29j" userLabel="PhoneNumber">
-                                <rect key="frame" x="30" y="177.66666666666666" width="333" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Hx0-QN-Gar"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad" textContentType="tel"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa5-om-Zle" userLabel="PhoneNumberValid">
-                                <rect key="frame" x="332" y="247.66666666666666" width="31" height="14.999999999999972"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6w-Gj-5Qg" userLabel="Next">
-                                <rect key="frame" x="30" y="728" width="333" height="50"/>
-                                <color key="backgroundColor" red="0.92549019610000005" green="0.52941176469999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="S15-UN-WSL"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="مرحله بعد"/>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="20k-UM-4uB"/>
                         <color key="backgroundColor" red="0.94509803921568625" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="fa5-om-Zle" firstAttribute="trailing" secondItem="XaX-rI-29j" secondAttribute="trailing" id="8pr-qj-Uty"/>
-                            <constraint firstItem="20k-UM-4uB" firstAttribute="bottom" secondItem="R6w-Gj-5Qg" secondAttribute="bottom" constant="40" id="GOl-h2-vEH"/>
-                            <constraint firstItem="XaX-rI-29j" firstAttribute="trailing" secondItem="FHG-AC-0u3" secondAttribute="trailing" id="NTc-qJ-fyZ"/>
-                            <constraint firstItem="R6w-Gj-5Qg" firstAttribute="centerX" secondItem="20k-UM-4uB" secondAttribute="centerX" id="aNi-Ws-e3D"/>
-                            <constraint firstItem="fa5-om-Zle" firstAttribute="top" secondItem="XaX-rI-29j" secondAttribute="bottom" constant="20" id="b9h-cL-XRH"/>
-                            <constraint firstItem="XaX-rI-29j" firstAttribute="centerX" secondItem="20k-UM-4uB" secondAttribute="centerX" id="fqb-i8-isB"/>
-                            <constraint firstItem="FHG-AC-0u3" firstAttribute="centerX" secondItem="20k-UM-4uB" secondAttribute="centerX" id="iqK-ZN-T7N"/>
-                            <constraint firstItem="XaX-rI-29j" firstAttribute="top" secondItem="FHG-AC-0u3" secondAttribute="bottom" constant="20" id="jyv-08-E2W"/>
-                            <constraint firstItem="20k-UM-4uB" firstAttribute="trailing" secondItem="R6w-Gj-5Qg" secondAttribute="trailing" constant="30" id="o7f-uo-Ord"/>
-                            <constraint firstItem="FHG-AC-0u3" firstAttribute="top" secondItem="Gb0-b7-954" secondAttribute="bottom" constant="40" id="poB-pX-KQX"/>
-                            <constraint firstItem="Gb0-b7-954" firstAttribute="top" secondItem="20k-UM-4uB" secondAttribute="top" constant="20" id="t7g-y3-l24"/>
-                            <constraint firstItem="Gb0-b7-954" firstAttribute="centerX" secondItem="20k-UM-4uB" secondAttribute="centerX" id="xTt-tB-fbw"/>
-                            <constraint firstItem="20k-UM-4uB" firstAttribute="trailing" secondItem="FHG-AC-0u3" secondAttribute="trailing" constant="30" id="zvQ-WK-30d"/>
-                        </constraints>
                     </view>
                     <connections>
                         <segue destination="fXH-wI-2S7" kind="custom" identifier="PhoneNumber_to_OTC" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="Zgb-aL-CMk"/>
