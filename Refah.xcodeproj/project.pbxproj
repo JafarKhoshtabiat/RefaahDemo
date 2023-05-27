@@ -186,6 +186,30 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		0C2582F22A21DE830064BD7A /* PhoneNumber Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0C2582F32A21DEB10064BD7A /* Views */,
+				0C2582F42A21DEBA0064BD7A /* Controllers */,
+			);
+			path = "PhoneNumber Screen";
+			sourceTree = "<group>";
+		};
+		0C2582F32A21DEB10064BD7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C2582F42A21DEBA0064BD7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CF5AA1B29FB1FF30003901B /* PhoneNumberViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		0C53EAEE2A0B91F5003F8E5B /* Login Flow */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,7 +226,7 @@
 				0C2582F12A2155A70064BD7A /* Controllers */,
 				0C2582DB2A20AEF80064BD7A /* RepresentiveCode Screen */,
 				0CA3DF5929FC57FB0059DEB5 /* SetPasswordViewController.swift */,
-				0CF5AA1B29FB1FF30003901B /* PhoneNumberViewController.swift */,
+				0C2582F22A21DE830064BD7A /* PhoneNumber Screen */,
 				0CA3DF4D29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift */,
 				0CA3DF5329FC38E80059DEB5 /* ChooseBankAccountsViewController.swift */,
 				0CA3DF5529FC526A0059DEB5 /* BankAccountTableViewCell.swift */,
