@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PhoneNumberView: RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton {
+class PhoneNumberView: RegistrationFlowView_TextField_ValidatoinLabel_NextButton {
     override var prompt: String {
         get {
             return "لطفا شماره موبایل خود را به درستی در کادر زیر وارد نمائید."

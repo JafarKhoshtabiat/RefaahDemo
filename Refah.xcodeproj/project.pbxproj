@@ -13,16 +13,16 @@
 		0C1BCEF929FE715400E805B3 /* CustomSegueWithBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BCEF829FE715400E805B3 /* CustomSegueWithBack.swift */; };
 		0C2582DA2A209B010064BD7A /* RegistrationStatusViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582D92A209B010064BD7A /* RegistrationStatusViewProtocol.swift */; };
 		0C2582DD2A20AF4E0064BD7A /* RepresentiveCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582DC2A20AF4E0064BD7A /* RepresentiveCodeView.swift */; };
-		0C2582E12A20E96C0064BD7A /* RegistrationFlowViewWithNextButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582E02A20E96C0064BD7A /* RegistrationFlowViewWithNextButtonProtocol.swift */; };
-		0C2582E32A20EDA70064BD7A /* RegistrationFlowViewWithNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582E22A20EDA70064BD7A /* RegistrationFlowViewWithNextButton.swift */; };
+		0C2582E12A20E96C0064BD7A /* RegistrationFlowView_NextButton_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582E02A20E96C0064BD7A /* RegistrationFlowView_NextButton_Protocol.swift */; };
+		0C2582E32A20EDA70064BD7A /* RegistrationFlowView_NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582E22A20EDA70064BD7A /* RegistrationFlowView_NextButton.swift */; };
 		0C2582E52A212B6D0064BD7A /* RegistrationFlowNextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582E42A212B6D0064BD7A /* RegistrationFlowNextDelegate.swift */; };
-		0C2582E72A212EF90064BD7A /* RegistrationFlowViewWithTextFieldAndNextButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582E62A212EF90064BD7A /* RegistrationFlowViewWithTextFieldAndNextButtonProtocol.swift */; };
-		0C2582E92A212F570064BD7A /* RegistrationFlowViewWithTextFieldAndNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582E82A212F570064BD7A /* RegistrationFlowViewWithTextFieldAndNextButton.swift */; };
+		0C2582E72A212EF90064BD7A /* RegistrationFlowView_TextField_NextButton_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582E62A212EF90064BD7A /* RegistrationFlowView_TextField_NextButton_Protocol.swift */; };
+		0C2582E92A212F570064BD7A /* RegistrationFlowView_TextField_NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582E82A212F570064BD7A /* RegistrationFlowView_TextField_NextButton.swift */; };
 		0C2582EB2A2147290064BD7A /* TextFieldEditingChangedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582EA2A2147290064BD7A /* TextFieldEditingChangedDelegate.swift */; };
 		0C2582ED2A2154DA0064BD7A /* RepresentiveCodeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582EC2A2154DA0064BD7A /* RepresentiveCodeViewProtocol.swift */; };
 		0C2582F62A21E07E0064BD7A /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582F52A21E07E0064BD7A /* PhoneNumberView.swift */; };
-		0C2582FA2A21EF5D0064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582F92A21EF5D0064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift */; };
-		0C2582FC2A21EF970064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582FB2A21EF970064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift */; };
+		0C2582FA2A21EF5D0064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582F92A21EF5D0064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton_Protocol.swift */; };
+		0C2582FC2A21EF970064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582FB2A21EF970064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton.swift */; };
 		0C2582FE2A21F76F0064BD7A /* PhoneNumberViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2582FD2A21F76F0064BD7A /* PhoneNumberViewProtocol.swift */; };
 		0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */; };
 		0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */; };
@@ -69,16 +69,16 @@
 		0C1BCEF829FE715400E805B3 /* CustomSegueWithBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegueWithBack.swift; sourceTree = "<group>"; };
 		0C2582D92A209B010064BD7A /* RegistrationStatusViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStatusViewProtocol.swift; sourceTree = "<group>"; };
 		0C2582DC2A20AF4E0064BD7A /* RepresentiveCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentiveCodeView.swift; sourceTree = "<group>"; };
-		0C2582E02A20E96C0064BD7A /* RegistrationFlowViewWithNextButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewWithNextButtonProtocol.swift; sourceTree = "<group>"; };
-		0C2582E22A20EDA70064BD7A /* RegistrationFlowViewWithNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewWithNextButton.swift; sourceTree = "<group>"; };
+		0C2582E02A20E96C0064BD7A /* RegistrationFlowView_NextButton_Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowView_NextButton_Protocol.swift; sourceTree = "<group>"; };
+		0C2582E22A20EDA70064BD7A /* RegistrationFlowView_NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowView_NextButton.swift; sourceTree = "<group>"; };
 		0C2582E42A212B6D0064BD7A /* RegistrationFlowNextDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowNextDelegate.swift; sourceTree = "<group>"; };
-		0C2582E62A212EF90064BD7A /* RegistrationFlowViewWithTextFieldAndNextButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewWithTextFieldAndNextButtonProtocol.swift; sourceTree = "<group>"; };
-		0C2582E82A212F570064BD7A /* RegistrationFlowViewWithTextFieldAndNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewWithTextFieldAndNextButton.swift; sourceTree = "<group>"; };
+		0C2582E62A212EF90064BD7A /* RegistrationFlowView_TextField_NextButton_Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowView_TextField_NextButton_Protocol.swift; sourceTree = "<group>"; };
+		0C2582E82A212F570064BD7A /* RegistrationFlowView_TextField_NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowView_TextField_NextButton.swift; sourceTree = "<group>"; };
 		0C2582EA2A2147290064BD7A /* TextFieldEditingChangedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEditingChangedDelegate.swift; sourceTree = "<group>"; };
 		0C2582EC2A2154DA0064BD7A /* RepresentiveCodeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentiveCodeViewProtocol.swift; sourceTree = "<group>"; };
 		0C2582F52A21E07E0064BD7A /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
-		0C2582F92A21EF5D0064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift; sourceTree = "<group>"; };
-		0C2582FB2A21EF970064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift; sourceTree = "<group>"; };
+		0C2582F92A21EF5D0064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton_Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowView_TextField_ValidatoinLabel_NextButton_Protocol.swift; sourceTree = "<group>"; };
+		0C2582FB2A21EF970064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowView_TextField_ValidatoinLabel_NextButton.swift; sourceTree = "<group>"; };
 		0C2582FD2A21F76F0064BD7A /* PhoneNumberViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewProtocol.swift; sourceTree = "<group>"; };
 		0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPostalAddressViewController.swift; sourceTree = "<group>"; };
@@ -177,12 +177,12 @@
 		0C2582F02A21558B0064BD7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0C2582E02A20E96C0064BD7A /* RegistrationFlowViewWithNextButtonProtocol.swift */,
-				0C2582E22A20EDA70064BD7A /* RegistrationFlowViewWithNextButton.swift */,
-				0C2582E62A212EF90064BD7A /* RegistrationFlowViewWithTextFieldAndNextButtonProtocol.swift */,
-				0C2582E82A212F570064BD7A /* RegistrationFlowViewWithTextFieldAndNextButton.swift */,
-				0C2582F92A21EF5D0064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift */,
-				0C2582FB2A21EF970064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift */,
+				0C2582E02A20E96C0064BD7A /* RegistrationFlowView_NextButton_Protocol.swift */,
+				0C2582E22A20EDA70064BD7A /* RegistrationFlowView_NextButton.swift */,
+				0C2582E62A212EF90064BD7A /* RegistrationFlowView_TextField_NextButton_Protocol.swift */,
+				0C2582E82A212F570064BD7A /* RegistrationFlowView_TextField_NextButton.swift */,
+				0C2582F92A21EF5D0064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton_Protocol.swift */,
+				0C2582FB2A21EF970064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -477,24 +477,24 @@
 				0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */,
 				0CAFB9282A1ECD98002F0C72 /* LaunchViewWithProgressViewProtocol.swift in Sources */,
 				0C2582FE2A21F76F0064BD7A /* PhoneNumberViewProtocol.swift in Sources */,
-				0C2582FA2A21EF5D0064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol.swift in Sources */,
+				0C2582FA2A21EF5D0064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton_Protocol.swift in Sources */,
 				0CA3DF4E29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift in Sources */,
 				0C1BCEF529FE6B6F00E805B3 /* PhoneNumberOTPViewController.swift in Sources */,
 				0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */,
-				0C2582E12A20E96C0064BD7A /* RegistrationFlowViewWithNextButtonProtocol.swift in Sources */,
+				0C2582E12A20E96C0064BD7A /* RegistrationFlowView_NextButton_Protocol.swift in Sources */,
 				0C2582EB2A2147290064BD7A /* TextFieldEditingChangedDelegate.swift in Sources */,
 				0CCC62702A2078BC00E8DC38 /* RegistrationStatusView.swift in Sources */,
 				0CF5AA1A29FAC36F0003901B /* RepresentiveCodeViewController.swift in Sources */,
 				0C2582DA2A209B010064BD7A /* RegistrationStatusViewProtocol.swift in Sources */,
 				0CA3DF5A29FC57FB0059DEB5 /* SetPasswordViewController.swift in Sources */,
-				0C2582E72A212EF90064BD7A /* RegistrationFlowViewWithTextFieldAndNextButtonProtocol.swift in Sources */,
+				0C2582E72A212EF90064BD7A /* RegistrationFlowView_TextField_NextButton_Protocol.swift in Sources */,
 				0CF5AA1C29FB1FF30003901B /* PhoneNumberViewController.swift in Sources */,
-				0C2582E92A212F570064BD7A /* RegistrationFlowViewWithTextFieldAndNextButton.swift in Sources */,
+				0C2582E92A212F570064BD7A /* RegistrationFlowView_TextField_NextButton.swift in Sources */,
 				0CA3DF5429FC38E80059DEB5 /* ChooseBankAccountsViewController.swift in Sources */,
 				0CA3DF5729FC526A0059DEB5 /* BankAccountTableViewCell.swift in Sources */,
-				0C2582E32A20EDA70064BD7A /* RegistrationFlowViewWithNextButton.swift in Sources */,
+				0C2582E32A20EDA70064BD7A /* RegistrationFlowView_NextButton.swift in Sources */,
 				0CA3DF5029FC330D0059DEB5 /* NewAccountCreatedViewController.swift in Sources */,
-				0C2582FC2A21EF970064BD7A /* RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift in Sources */,
+				0C2582FC2A21EF970064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton.swift in Sources */,
 				0C1BCEF729FE712B00E805B3 /* CustomSegue.swift in Sources */,
 				0CA3372229F9AC1E00A40E39 /* RegistrationStatusViewController.swift in Sources */,
 				0C2582F62A21E07E0064BD7A /* PhoneNumberView.swift in Sources */,

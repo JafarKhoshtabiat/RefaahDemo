@@ -1,5 +1,5 @@
 //
-//  RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton.swift
+//  RegistrationFlowView_TextField_ValidatoinLabel_NextButton.swift
 //  Refah
 //
 //  Created by Jafar Khoshtabiat on 5/27/23.
@@ -7,7 +7,7 @@
 
 import UIKit
                                                                         
-class RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton: RegistrationFlowViewWithTextFieldAndNextButton {
+class RegistrationFlowView_TextField_ValidatoinLabel_NextButton: RegistrationFlowView_TextField_NextButton {
     let validationLabel = UILabel()
     var isValidText = "پیش‌فرض معتبر"
     var isNotValidText = "پیش‌فرض نامعتبر"
@@ -41,7 +41,7 @@ class RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton: Registra
     }
 }
 
-extension RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButton: RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol {
+extension RegistrationFlowView_TextField_ValidatoinLabel_NextButton: RegistrationFlowView_TextField_ValidatoinLabel_NextButton_Protocol {
     func showValidationLabel(isValid: Bool) {
         if isValid {
             self.validationLabel.text = self.isValidText

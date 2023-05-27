@@ -1,5 +1,5 @@
 //
-//  RegistrationFlowViewWithNextButton.swift
+//  RegistrationFlowView_NextButton.swift
 //  Refah
 //
 //  Created by Jafar Khoshtabiat on 5/26/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegistrationFlowViewWithNextButton: UIView {
+class RegistrationFlowView_NextButton: UIView {
     var flowNextDelegate: RegistrationFlowNextDelegate?
     let createAccountLabel = UILabel()
     var prompt = "متن پیش‌فرض"
@@ -94,7 +94,7 @@ class RegistrationFlowViewWithNextButton: UIView {
     }
 }
 
-extension RegistrationFlowViewWithNextButton: RegistrationFlowViewWithNextButtonProtocol {
+extension RegistrationFlowView_NextButton: RegistrationFlowView_NextButton_Protocol {
     @objc func nextButtonTouchUpInside() {
         self.flowNextDelegate?.next()
     }

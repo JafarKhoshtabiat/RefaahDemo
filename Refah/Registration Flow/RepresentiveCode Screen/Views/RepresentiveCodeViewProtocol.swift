@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol RepresentiveCodeViewProtocol: RegistrationFlowViewWithTextFieldAndNextButtonProtocol {
+protocol RepresentiveCodeViewProtocol: RegistrationFlowView_TextField_NextButton_Protocol {
     var representiveCodeAvailabilityButton: UIButton { get }
     var representiveCodeAvailabilityDelegate: RepresentiveCodeAvailabilityDelegate? { get set }
     

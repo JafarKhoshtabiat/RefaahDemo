@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol PhoneNumberViewProtocol: RegistrationFlowViewWithTextFieldAndValidatoinLabelAndNextButtonProtocol {
+protocol PhoneNumberViewProtocol: RegistrationFlowView_TextField_ValidatoinLabel_NextButton_Protocol {
     func makeTextFieldFirstResponder()
 }

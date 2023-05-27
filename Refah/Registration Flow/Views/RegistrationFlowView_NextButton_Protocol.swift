@@ -1,5 +1,5 @@
 //
-//  RegistrationFlowViewWithNextButtonProtocol.swift
+//  RegistrationFlowView_NextButton_Protocol.swift
 //  Refah
 //
 //  Created by Jafar Khoshtabiat on 5/26/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol RegistrationFlowViewWithNextButtonProtocol where Self: UIView {
+protocol RegistrationFlowView_NextButton_Protocol where Self: UIView {
     var flowNextDelegate: RegistrationFlowNextDelegate? { get set }
     var createAccountLabel: UILabel { get }
     var prompt: String { get set }

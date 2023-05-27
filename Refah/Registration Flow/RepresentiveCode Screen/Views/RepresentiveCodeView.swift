@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RepresentiveCodeView: RegistrationFlowViewWithTextFieldAndNextButton {
+class RepresentiveCodeView: RegistrationFlowView_TextField_NextButton {
     override var prompt: String {
         get {
             return "لطفا کد معرف خود را به درستی در کادر زیر وارد نمائید."

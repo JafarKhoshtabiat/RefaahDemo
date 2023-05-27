@@ -1,5 +1,5 @@
 //
-//  RegistrationFlowViewWithTextFieldAndNextButton.swift
+//  RegistrationFlowView_TextField_NextButton.swift
 //  Refah
 //
 //  Created by Jafar Khoshtabiat on 5/26/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegistrationFlowViewWithTextFieldAndNextButton: RegistrationFlowViewWithNextButton {
+class RegistrationFlowView_TextField_NextButton: RegistrationFlowView_NextButton {
     let textField: UITextField = UITextField()
     var placeholderText = "عبارت پیش‌فرض"
     var textFieldDelegate: UITextFieldDelegate? {
@@ -65,7 +65,7 @@ class RegistrationFlowViewWithTextFieldAndNextButton: RegistrationFlowViewWithNe
     }
 }
 
-extension RegistrationFlowViewWithTextFieldAndNextButton: RegistrationFlowViewWithTextFieldAndNextButtonProtocol {
+extension RegistrationFlowView_TextField_NextButton: RegistrationFlowView_TextField_NextButton_Protocol {
     @objc func textFieldEditingChanged(_ textField: UITextField) {
         self.textFieldEditingChangedDelegate?.editingChanged(textField)
     }
