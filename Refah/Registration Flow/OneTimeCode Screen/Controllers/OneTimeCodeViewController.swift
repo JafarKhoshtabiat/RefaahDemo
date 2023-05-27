@@ -90,7 +90,6 @@ extension OneTimeCodeViewController: UITextFieldDelegate {
             case OTCTextFieldTag.otc3.rawValue:
                 self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc4.rawValue)
             case OTCTextFieldTag.otc4.rawValue:
-//                self.oneTimeCodeView.resignTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc4.rawValue)
                 textField.resignFirstResponder()
             default:
                 break
@@ -172,8 +171,8 @@ extension OneTimeCodeViewController: TextFieldEditingChangedDelegate {
     func editingChanged(_ textField: UITextField) {
         switch textField.tag {
         case OTCTextFieldTag.otc0.rawValue:
-            guard let currentOTC1 = textField.text else { self.otc0 = ""; return }
-            self.otc0 = currentOTC1
+            guard let currentOTC0 = textField.text else { self.otc0 = ""; return }
+            self.otc0 = currentOTC0
             let allOTCsEntered = self.isAll5OTCsEntered()
             if allOTCsEntered {
                 textField.resignFirstResponder()
@@ -181,8 +180,8 @@ extension OneTimeCodeViewController: TextFieldEditingChangedDelegate {
                 self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc1.rawValue)
             }
         case OTCTextFieldTag.otc1.rawValue:
-            guard let currentOTC2 = textField.text else { self.otc1 = ""; return }
-            self.otc1 = currentOTC2
+            guard let currentOTC1 = textField.text else { self.otc1 = ""; return }
+            self.otc1 = currentOTC1
             let allOTCsEntered = self.isAll5OTCsEntered()
             if allOTCsEntered {
                 textField.resignFirstResponder()
@@ -190,8 +189,8 @@ extension OneTimeCodeViewController: TextFieldEditingChangedDelegate {
                 self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc2.rawValue)
             }
         case OTCTextFieldTag.otc2.rawValue:
-            guard let currentOTC3 = textField.text else { self.otc2 = ""; return }
-            self.otc2 = currentOTC3
+            guard let currentOTC2 = textField.text else { self.otc2 = ""; return }
+            self.otc2 = currentOTC2
             let allOTCsEntered = self.isAll5OTCsEntered()
             if allOTCsEntered {
                 textField.resignFirstResponder()
@@ -199,8 +198,8 @@ extension OneTimeCodeViewController: TextFieldEditingChangedDelegate {
                 self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc3.rawValue)
             }
         case OTCTextFieldTag.otc3.rawValue:
-            guard let currentOTC4 = textField.text else { self.otc3 = ""; return }
-            self.otc3 = currentOTC4
+            guard let currentOTC3 = textField.text else { self.otc3 = ""; return }
+            self.otc3 = currentOTC3
             let allOTCsEntered = self.isAll5OTCsEntered()
             if allOTCsEntered {
                 textField.resignFirstResponder()
@@ -208,8 +207,8 @@ extension OneTimeCodeViewController: TextFieldEditingChangedDelegate {
                 self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc4.rawValue)
             }
         case OTCTextFieldTag.otc4.rawValue:
-            guard let currentOTC5 = textField.text else { self.otc4 = ""; return }
-            self.otc4 = currentOTC5
+            guard let currentOTC4 = textField.text else { self.otc4 = ""; return }
+            self.otc4 = currentOTC4
             let allOTCsEntered = self.isAll5OTCsEntered()
             if allOTCsEntered {
                 textField.resignFirstResponder()
