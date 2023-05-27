@@ -274,6 +274,9 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
             
             counter += 1
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action:  #selector (self.tapAction (_:)))
+        self.addGestureRecognizer(tapGesture)
     }
     
     @objc func textFieldEditingChanged(_ textField: UITextField) {
@@ -296,24 +299,7 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
             break
         }
     }
-    
-    func resignTextFieldFirstResponderWith(tag: Int) {
-        switch tag {
-        case OTCTextFieldTag.otc0.rawValue:
-            self.otcTextFields[0].resignFirstResponder()
-        case OTCTextFieldTag.otc1.rawValue:
-            self.otcTextFields[1].resignFirstResponder()
-        case OTCTextFieldTag.otc2.rawValue:
-            self.otcTextFields[2].resignFirstResponder()
-        case OTCTextFieldTag.otc3.rawValue:
-            self.otcTextFields[3].resignFirstResponder()
-        case OTCTextFieldTag.otc4.rawValue:
-            self.otcTextFields[4].resignFirstResponder()
-        default:
-            break
-        }
-    }
-    
+        
     func setOTCTextFieldWith(tag: Int, text: String) {
         switch tag {
         case OTCTextFieldTag.otc0.rawValue:
@@ -328,6 +314,15 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
             self.otcTextFields[4].text = text
         default:
             break
+        }
+    }
+    
+    @objc func tapAction(_ sender:UITapGestureRecognizer){
+        for otcTextField in self.otcTextFields {
+            if otcTextField.isFirstResponder {
+                otcTextField.resignFirstResponder()
+                break
+            }
         }
     }
 }

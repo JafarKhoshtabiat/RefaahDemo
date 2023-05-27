@@ -11,128 +11,18 @@ class OneTimeCodeViewController: UIViewController {
     var oneTimeCodeView = OneTimeCodeView()
 //    var oneTimeCodeView: someProtocol = OneTimeCodeView()
     
-    @IBOutlet weak var otc0TextField: UITextField!
-    @IBOutlet weak var otc1TextField: UITextField!
-    @IBOutlet weak var otc2TextField: UITextField!
-    @IBOutlet weak var otc3TextField: UITextField!
-    @IBOutlet weak var otc4TextField: UITextField!
-    @IBOutlet weak var nextButton: UIButton!
-    
     var otc0 = ""
     var otc1 = ""
     var otc2 = ""
     var otc3 = ""
     var otc4 = ""
     
-    var stayInSameOTC = false
-    
-    @IBAction func otc1TextFieldEditingChanged(_ sender: UITextField) {
-        guard let currentOTC1 = sender.text else { self.otc0 = ""; return }
-        
-        self.otc0 = currentOTC1
-//        if let shouldGoBack = self.shouldGoBack {
-//            if !shouldGoBack {
-//                self.otc2TextField.becomeFirstResponder()
-//            }
-//        }
-        
-        if !stayInSameOTC {
-            self.otc1TextField.becomeFirstResponder()
-        }
-        self.showNextButtonIfAllOTCsEntered()
-    }
-    
-    @IBAction func otc2TextFieldEditingChanged(_ sender: UITextField) {
-        guard let currentOTC2 = sender.text else { self.otc1 = ""; return }
-        
-        self.otc1 = currentOTC2
-//        if let shouldGoBack = self.shouldGoBack {
-//            if shouldGoBack {
-//                self.otc1TextField.becomeFirstResponder()
-//            } else {
-//                self.otc3TextField.becomeFirstResponder()
-//            }
-//        }
-        if !stayInSameOTC {
-            self.otc2TextField.becomeFirstResponder()
-        }
-        self.showNextButtonIfAllOTCsEntered()
-    }
-    
-    @IBAction func otc3TextFieldEditingChanged(_ sender: UITextField) {
-        guard let currentOTC3 = sender.text else { self.otc2 = ""; return }
-        
-        self.otc2 = currentOTC3
-//        if let shouldGoBack = self.shouldGoBack {
-//            if shouldGoBack {
-//                self.otc2TextField.becomeFirstResponder()
-//            } else {
-//                self.otc4TextField.becomeFirstResponder()
-//            }
-//        }
-        if !stayInSameOTC {
-            self.otc3TextField.becomeFirstResponder()
-        }
-        self.showNextButtonIfAllOTCsEntered()
-    }
-    
-    @IBAction func otc4TextFieldEditingChanged(_ sender: UITextField) {
-        guard let currentOTC4 = sender.text else { self.otc3 = ""; return }
-        
-        self.otc3 = currentOTC4
-//        if let shouldGoBack = self.shouldGoBack {
-//            if shouldGoBack {
-//                self.otc3TextField.becomeFirstResponder()
-//            } else {
-//                self.otc5TextField.becomeFirstResponder()
-//            }
-//        }
-        if !stayInSameOTC {
-            self.otc4TextField.becomeFirstResponder()
-        }
-        self.showNextButtonIfAllOTCsEntered()
-    }
-    
-    @IBAction func otc5TextFieldEditingChanged(_ sender: UITextField) {
-        guard let currentOTC5 = sender.text else { self.otc4 = ""; return }
-        
-        self.otc4 = currentOTC5
-//        if let shouldGoBack = self.shouldGoBack {
-//            if shouldGoBack {
-//                self.otc4TextField.becomeFirstResponder()
-//            } else {
-//                self.otc5TextField.resignFirstResponder()
-//            }
-//        }
-        if !stayInSameOTC {
-            self.otc4TextField.resignFirstResponder()
-        }
-        self.showNextButtonIfAllOTCsEntered()
-    }
-    
-    @IBAction func nextButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "otpToNationalIdSegue", sender: nil)
-    }
-    
-    func isAll5OTCsEntered() -> Bool {
-        return self.otc0.count == 1 &&
-               self.otc1.count == 1 &&
-               self.otc2.count == 1 &&
-               self.otc3.count == 1 &&
-               self.otc4.count == 1
-    }
-    
-    func showNextButtonIfAllOTCsEntered() {
-        if self.isAll5OTCsEntered() {
-            self.nextButton.isHidden = false
-        } else {
-            self.nextButton.isHidden = true
-        }
-    }
+    var stayInSameOTCTextField = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.oneTimeCodeView.flowNextDelegate = self
         self.oneTimeCodeView.otcTextFieldDelegate = self
         self.oneTimeCodeView.otcTextFieldEditingChangedDelegate = self
     }
@@ -143,6 +33,46 @@ class OneTimeCodeViewController: UIViewController {
     
     override func loadView() {
         self.view = self.oneTimeCodeView
+    }
+}
+
+extension OneTimeCodeViewController {
+    func isAll5OTCsEntered() -> Bool {
+        return self.otc0.count == 1 &&
+               self.otc1.count == 1 &&
+               self.otc2.count == 1 &&
+               self.otc3.count == 1 &&
+               self.otc4.count == 1
+    }
+    
+    func getFirstEmptyOTCIndex() -> Int {
+        if self.otc0.count < 1 {
+            return 0
+        }
+        if self.otc1.count < 1 {
+            return 1
+        }
+        if self.otc2.count < 1 {
+            return 2
+        }
+        if self.otc3.count < 1 {
+            return 3
+        }
+        if self.otc4.count < 1 {
+            return 4
+        }
+        
+        return -1    // logical error
+    }
+}
+
+extension OneTimeCodeViewController: RegistrationFlowNextDelegate {
+    func next() {
+        if self.isAll5OTCsEntered() {
+            self.performSegue(withIdentifier: "OneTimeCode_to_NationalCode", sender: nil)
+        } else {
+            self.presentUIAlertController(title: "", titleColor: UIColor.flameHawkfish!, message: "کد معتبر نیست.")
+        }
     }
 }
 
@@ -160,7 +90,8 @@ extension OneTimeCodeViewController: UITextFieldDelegate {
             case OTCTextFieldTag.otc3.rawValue:
                 self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc4.rawValue)
             case OTCTextFieldTag.otc4.rawValue:
-                self.oneTimeCodeView.resignTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc4.rawValue)
+//                self.oneTimeCodeView.resignTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc4.rawValue)
+                textField.resignFirstResponder()
             default:
                 break
             }
@@ -172,23 +103,23 @@ extension OneTimeCodeViewController: UITextFieldDelegate {
             switch textField.tag {
             case OTCTextFieldTag.otc0.rawValue:
                 if self.otc0.count == 1 {
-                    self.stayInSameOTC = true
+                    self.stayInSameOTCTextField = true
                 }
             case OTCTextFieldTag.otc1.rawValue:
                 if self.otc1.count == 1 {
-                    self.stayInSameOTC = true
+                    self.stayInSameOTCTextField = true
                 }
             case OTCTextFieldTag.otc2.rawValue:
                 if self.otc2.count == 1 {
-                    self.stayInSameOTC = true
+                    self.stayInSameOTCTextField = true
                 }
             case OTCTextFieldTag.otc3.rawValue:
                 if self.otc3.count == 1 {
-                    self.stayInSameOTC = true
+                    self.stayInSameOTCTextField = true
                 }
             case OTCTextFieldTag.otc4.rawValue:
                 if self.otc4.count == 1 {
-                    self.stayInSameOTC = true
+                    self.stayInSameOTCTextField = true
                 }
             default:
                 return false
@@ -229,7 +160,7 @@ extension OneTimeCodeViewController: UITextFieldDelegate {
                 return false
             }
             
-            self.stayInSameOTC = false
+            self.stayInSameOTCTextField = false
             return true
         }
         
@@ -243,43 +174,65 @@ extension OneTimeCodeViewController: TextFieldEditingChangedDelegate {
         case OTCTextFieldTag.otc0.rawValue:
             guard let currentOTC1 = textField.text else { self.otc0 = ""; return }
             self.otc0 = currentOTC1
-            if !stayInSameOTC {
+            let allOTCsEntered = self.isAll5OTCsEntered()
+            if allOTCsEntered {
+                textField.resignFirstResponder()
+            } else if !stayInSameOTCTextField {
                 self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc1.rawValue)
             }
         case OTCTextFieldTag.otc1.rawValue:
             guard let currentOTC2 = textField.text else { self.otc1 = ""; return }
             self.otc1 = currentOTC2
-            if !stayInSameOTC {
+            let allOTCsEntered = self.isAll5OTCsEntered()
+            if allOTCsEntered {
+                textField.resignFirstResponder()
+            } else if !stayInSameOTCTextField {
                 self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc2.rawValue)
             }
         case OTCTextFieldTag.otc2.rawValue:
             guard let currentOTC3 = textField.text else { self.otc2 = ""; return }
             self.otc2 = currentOTC3
-            if !stayInSameOTC {
+            let allOTCsEntered = self.isAll5OTCsEntered()
+            if allOTCsEntered {
+                textField.resignFirstResponder()
+            } else if !stayInSameOTCTextField {
                 self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc3.rawValue)
             }
         case OTCTextFieldTag.otc3.rawValue:
             guard let currentOTC4 = textField.text else { self.otc3 = ""; return }
             self.otc3 = currentOTC4
-            if !stayInSameOTC {
+            let allOTCsEntered = self.isAll5OTCsEntered()
+            if allOTCsEntered {
+                textField.resignFirstResponder()
+            } else if !stayInSameOTCTextField {
                 self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc4.rawValue)
             }
         case OTCTextFieldTag.otc4.rawValue:
             guard let currentOTC5 = textField.text else { self.otc4 = ""; return }
             self.otc4 = currentOTC5
-            if !stayInSameOTC {
+            let allOTCsEntered = self.isAll5OTCsEntered()
+            if allOTCsEntered {
                 textField.resignFirstResponder()
+            } else if !stayInSameOTCTextField {
+                textField.resignFirstResponder()
+                switch self.getFirstEmptyOTCIndex() {
+                case 0:
+                    self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc0.rawValue)
+                case 1:
+                    self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc1.rawValue)
+                case 2:
+                    self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc2.rawValue)
+                case 3:
+                    self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc3.rawValue)
+                case 4:
+                    // can't reach here, just for symmetry
+                    self.oneTimeCodeView.makeTextFieldFirstResponderWith(tag: OTCTextFieldTag.otc4.rawValue)
+                default:
+                    break
+                }
             }
         default:
             break
         }
     }
-}
-
-enum OTCTextFieldTag: Int {
-    case otc0 = 10000
-    case otc1 = 10001
-    case otc2 = 10002
-    case otc3 = 10003
-    case otc4 = 10004
 }
