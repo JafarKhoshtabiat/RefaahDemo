@@ -30,10 +30,16 @@
 		0C25830A2A22AA5F0064BD7A /* OTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2583092A22AA5F0064BD7A /* OTC.swift */; };
 		0C25830C2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25830B2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift */; };
 		0C25830F2A22BB000064BD7A /* NationalCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25830E2A22BB000064BD7A /* NationalCodeView.swift */; };
+		0C2583142A2342300064BD7A /* NationalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2583132A2342300064BD7A /* NationalCardView.swift */; };
 		0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */; };
+		0C552AAE2A23B80F00B21566 /* UploadingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C552AAD2A23B80F00B21566 /* UploadingStatus.swift */; };
+		0C552AB02A23B83A00B21566 /* NationalCardPhotoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C552AAF2A23B83A00B21566 /* NationalCardPhotoProtocol.swift */; };
+		0C552AB22A23B86200B21566 /* NationalCardPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C552AB12A23B86200B21566 /* NationalCardPhoto.swift */; };
+		0C552AB42A23B89600B21566 /* UploadPhotoButtonsTouchUpInsideDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C552AB32A23B89600B21566 /* UploadPhotoButtonsTouchUpInsideDelegate.swift */; };
 		0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */; };
 		0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */; };
 		0C7D8EB329FD8CC600D4291F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D8EB229FD8CC600D4291F /* Colors.xcassets */; };
+		0C895D622A23C39800E8C7B0 /* NationalCardViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C895D612A23C39800E8C7B0 /* NationalCardViewProtocol.swift */; };
 		0CA3372229F9AC1E00A40E39 /* RegistrationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3372129F9AC1E00A40E39 /* RegistrationStatusViewController.swift */; };
 		0CA3372429F9D31000A40E39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3372329F9D31000A40E39 /* LoginViewController.swift */; };
 		0CA3DF4E29FC18630059DEB5 /* NationalCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF4D29FC18630059DEB5 /* NationalCardViewController.swift */; };
@@ -92,10 +98,16 @@
 		0C2583092A22AA5F0064BD7A /* OTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTC.swift; sourceTree = "<group>"; };
 		0C25830B2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeViewProtocol.swift; sourceTree = "<group>"; };
 		0C25830E2A22BB000064BD7A /* NationalCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCodeView.swift; sourceTree = "<group>"; };
+		0C2583132A2342300064BD7A /* NationalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCardView.swift; sourceTree = "<group>"; };
 		0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		0C552AAD2A23B80F00B21566 /* UploadingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadingStatus.swift; sourceTree = "<group>"; };
+		0C552AAF2A23B83A00B21566 /* NationalCardPhotoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCardPhotoProtocol.swift; sourceTree = "<group>"; };
+		0C552AB12A23B86200B21566 /* NationalCardPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCardPhoto.swift; sourceTree = "<group>"; };
+		0C552AB32A23B89600B21566 /* UploadPhotoButtonsTouchUpInsideDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoButtonsTouchUpInsideDelegate.swift; sourceTree = "<group>"; };
 		0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPostalAddressViewController.swift; sourceTree = "<group>"; };
 		0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCodeViewController.swift; sourceTree = "<group>"; };
 		0C7D8EB229FD8CC600D4291F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		0C895D612A23C39800E8C7B0 /* NationalCardViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCardViewProtocol.swift; sourceTree = "<group>"; };
 		0CA3372129F9AC1E00A40E39 /* RegistrationStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStatusViewController.swift; sourceTree = "<group>"; };
 		0CA3372329F9D31000A40E39 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0CA3DF4D29FC18630059DEB5 /* NationalCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCardViewController.swift; sourceTree = "<group>"; };
@@ -299,7 +311,9 @@
 		0C2583122A233EE10064BD7A /* NationalCard Screen */ = {
 			isa = PBXGroup;
 			children = (
-				0CA3DF4D29FC18630059DEB5 /* NationalCardViewController.swift */,
+				0C895D652A23C4E800E8C7B0 /* Views */,
+				0C895D642A23C4E000E8C7B0 /* Controllers */,
+				0C895D632A23C4D900E8C7B0 /* Models */,
 			);
 			path = "NationalCard Screen";
 			sourceTree = "<group>";
@@ -333,11 +347,39 @@
 			path = "Registration Flow";
 			sourceTree = "<group>";
 		};
+		0C895D632A23C4D900E8C7B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C552AAD2A23B80F00B21566 /* UploadingStatus.swift */,
+				0C552AAF2A23B83A00B21566 /* NationalCardPhotoProtocol.swift */,
+				0C552AB12A23B86200B21566 /* NationalCardPhoto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C895D642A23C4E000E8C7B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3DF4D29FC18630059DEB5 /* NationalCardViewController.swift */,
+				0C552AB32A23B89600B21566 /* UploadPhotoButtonsTouchUpInsideDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0C895D652A23C4E800E8C7B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C2583132A2342300064BD7A /* NationalCardView.swift */,
+				0C895D612A23C39800E8C7B0 /* NationalCardViewProtocol.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0C8C98E12A1CBD4F006330FC /* Loading&Status Flow */ = {
 			isa = PBXGroup;
 			children = (
-				0CCC626C2A200A1600E8DC38 /* RegistrationStatus Screen */,
 				0C8C98E42A1E14D9006330FC /* Launch Screen */,
+				0CCC626C2A200A1600E8DC38 /* RegistrationStatus Screen */,
 			);
 			path = "Loading&Status Flow";
 			sourceTree = "<group>";
@@ -553,9 +595,12 @@
 				0CA4E31729F8823C008D7FBB /* SceneDelegate.swift in Sources */,
 				0CA3372429F9D31000A40E39 /* LoginViewController.swift in Sources */,
 				0C1BCEF329FE57AF00E805B3 /* extension+UIViewController.swift in Sources */,
+				0C552AAE2A23B80F00B21566 /* UploadingStatus.swift in Sources */,
+				0C552AB02A23B83A00B21566 /* NationalCardPhotoProtocol.swift in Sources */,
 				0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */,
 				0CAFB9262A1EC6CE002F0C72 /* extension+UIColor.swift in Sources */,
 				0C25830C2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift in Sources */,
+				0C2583142A2342300064BD7A /* NationalCardView.swift in Sources */,
 				0C1BCEF929FE715400E805B3 /* CustomSegueWithBack.swift in Sources */,
 				0C2582E52A212B6D0064BD7A /* RegistrationFlowNextDelegate.swift in Sources */,
 				0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */,
@@ -574,10 +619,13 @@
 				0C2582DA2A209B010064BD7A /* RegistrationStatusViewProtocol.swift in Sources */,
 				0CA3DF5A29FC57FB0059DEB5 /* SetPasswordViewController.swift in Sources */,
 				0C2582E72A212EF90064BD7A /* RegistrationFlowView_TextField_NextButton_Protocol.swift in Sources */,
+				0C552AB22A23B86200B21566 /* NationalCardPhoto.swift in Sources */,
 				0CF5AA1C29FB1FF30003901B /* PhoneNumberViewController.swift in Sources */,
 				0C25830A2A22AA5F0064BD7A /* OTC.swift in Sources */,
 				0C2582E92A212F570064BD7A /* RegistrationFlowView_TextField_NextButton.swift in Sources */,
+				0C552AB42A23B89600B21566 /* UploadPhotoButtonsTouchUpInsideDelegate.swift in Sources */,
 				0CA3DF5429FC38E80059DEB5 /* ChooseBankAccountsViewController.swift in Sources */,
+				0C895D622A23C39800E8C7B0 /* NationalCardViewProtocol.swift in Sources */,
 				0CA3DF5729FC526A0059DEB5 /* BankAccountTableViewCell.swift in Sources */,
 				0C2582E32A20EDA70064BD7A /* RegistrationFlowView_NextButton.swift in Sources */,
 				0CA3DF5029FC330D0059DEB5 /* NewAccountCreatedViewController.swift in Sources */,

@@ -63,22 +63,21 @@ class RegistrationFlowView_NextButton: UIView {
                                                               multiplier: 1, constant: 0)
         self.addConstraints([promptLabelTopConstraint, promptLabelRightConstraint, promptLabelCenterXConstraint])
         
-        let nextButton = UIButton(type: .system)
-        nextButton.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(nextButton)
-        let nextButtonRightConstraint = NSLayoutConstraint(item: nextButton, attribute: .right,
+        self.nextButton.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(self.nextButton)
+        let nextButtonRightConstraint = NSLayoutConstraint(item: self.nextButton, attribute: .right,
                                                            relatedBy: .equal,
                                                            toItem: self, attribute: .right,
                                                            multiplier: 1, constant: -30)
-        let nextButtonBottomConstraint = NSLayoutConstraint(item: nextButton, attribute: .bottom,
+        let nextButtonBottomConstraint = NSLayoutConstraint(item: self.nextButton, attribute: .bottom,
                                                             relatedBy: .equal,
                                                             toItem: self, attribute: .bottom,
                                                             multiplier: 1, constant: -60)
-        let nextButtonHeightConstraint = NSLayoutConstraint(item: nextButton, attribute: .height,
+        let nextButtonHeightConstraint = NSLayoutConstraint(item: self.nextButton, attribute: .height,
                                                             relatedBy: .equal,
                                                             toItem: nil, attribute: .height,
                                                             multiplier: 0, constant: 50)
-        let nextButtonCenterXConstraint = NSLayoutConstraint(item: nextButton, attribute: .centerX,
+        let nextButtonCenterXConstraint = NSLayoutConstraint(item: self.nextButton, attribute: .centerX,
                                                              relatedBy: .equal,
                                                              toItem: self, attribute: .centerX,
                                                              multiplier: 1, constant: 0)
@@ -86,11 +85,11 @@ class RegistrationFlowView_NextButton: UIView {
                              nextButtonBottomConstraint,
                              nextButtonHeightConstraint,
                              nextButtonCenterXConstraint])
-        nextButton.backgroundColor = UIColor.carnival
-        nextButton.layer.cornerRadius = 20
-        nextButton.setTitle("مرحله بعد", for: .normal)
-        nextButton.setTitleColor(UIColor.white, for: .normal)
-        nextButton.addTarget(self, action: #selector(self.nextButtonTouchUpInside), for: .touchUpInside)
+        self.nextButton.backgroundColor = UIColor.carnival
+        self.nextButton.layer.cornerRadius = 20
+        self.nextButton.setTitle("مرحله بعد", for: .normal)
+        self.nextButton.setTitleColor(UIColor.white, for: .normal)
+        self.nextButton.addTarget(self, action: #selector(self.nextButtonTouchUpInside), for: .touchUpInside)
     }
 }
 
