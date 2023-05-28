@@ -36,7 +36,7 @@
 		0C7D8EB329FD8CC600D4291F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D8EB229FD8CC600D4291F /* Colors.xcassets */; };
 		0CA3372229F9AC1E00A40E39 /* RegistrationStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3372129F9AC1E00A40E39 /* RegistrationStatusViewController.swift */; };
 		0CA3372429F9D31000A40E39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3372329F9D31000A40E39 /* LoginViewController.swift */; };
-		0CA3DF4E29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF4D29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift */; };
+		0CA3DF4E29FC18630059DEB5 /* NationalCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF4D29FC18630059DEB5 /* NationalCardViewController.swift */; };
 		0CA3DF5029FC330D0059DEB5 /* NewAccountCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF4F29FC330D0059DEB5 /* NewAccountCreatedViewController.swift */; };
 		0CA3DF5429FC38E80059DEB5 /* ChooseBankAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF5329FC38E80059DEB5 /* ChooseBankAccountsViewController.swift */; };
 		0CA3DF5729FC526A0059DEB5 /* BankAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3DF5529FC526A0059DEB5 /* BankAccountTableViewCell.swift */; };
@@ -98,7 +98,7 @@
 		0C7D8EB229FD8CC600D4291F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0CA3372129F9AC1E00A40E39 /* RegistrationStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStatusViewController.swift; sourceTree = "<group>"; };
 		0CA3372329F9D31000A40E39 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		0CA3DF4D29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadNationalCardPhotoViewController.swift; sourceTree = "<group>"; };
+		0CA3DF4D29FC18630059DEB5 /* NationalCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCardViewController.swift; sourceTree = "<group>"; };
 		0CA3DF4F29FC330D0059DEB5 /* NewAccountCreatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountCreatedViewController.swift; sourceTree = "<group>"; };
 		0CA3DF5329FC38E80059DEB5 /* ChooseBankAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBankAccountsViewController.swift; sourceTree = "<group>"; };
 		0CA3DF5529FC526A0059DEB5 /* BankAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountTableViewCell.swift; sourceTree = "<group>"; };
@@ -296,6 +296,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		0C2583122A233EE10064BD7A /* NationalCard Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3DF4D29FC18630059DEB5 /* NationalCardViewController.swift */,
+			);
+			path = "NationalCard Screen";
+			sourceTree = "<group>";
+		};
 		0C53EAEE2A0B91F5003F8E5B /* Login Flow */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,7 +322,7 @@
 				0C2582F22A21DE830064BD7A /* PhoneNumber Screen */,
 				0C2582FF2A21FE1F0064BD7A /* OneTimeCode Screen */,
 				0C25830D2A22BA3D0064BD7A /* NationalCode Screen */,
-				0CA3DF4D29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift */,
+				0C2583122A233EE10064BD7A /* NationalCard Screen */,
 				0CA3DF5329FC38E80059DEB5 /* ChooseBankAccountsViewController.swift */,
 				0CA3DF5529FC526A0059DEB5 /* BankAccountTableViewCell.swift */,
 				0CA3DF5929FC57FB0059DEB5 /* SetPasswordViewController.swift */,
@@ -555,7 +563,7 @@
 				0C25830F2A22BB000064BD7A /* NationalCodeView.swift in Sources */,
 				0C2582FE2A21F76F0064BD7A /* RegistrationFlowView_FirstResponderTextField_ValidatoinLabel_NextButton_Protocol.swift in Sources */,
 				0C2582FA2A21EF5D0064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton_Protocol.swift in Sources */,
-				0CA3DF4E29FC18630059DEB5 /* UploadNationalCardPhotoViewController.swift in Sources */,
+				0CA3DF4E29FC18630059DEB5 /* NationalCardViewController.swift in Sources */,
 				0C1BCEF529FE6B6F00E805B3 /* OneTimeCodeViewController.swift in Sources */,
 				0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */,
 				0C2582E12A20E96C0064BD7A /* RegistrationFlowView_NextButton_Protocol.swift in Sources */,

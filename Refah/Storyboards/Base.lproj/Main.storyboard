@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="4076" y="-27"/>
         </scene>
-        <!--Upload National Card Photo View Controller-->
+        <!--National Card View Controller-->
         <scene sceneID="xAI-Mg-oo9">
             <objects>
-                <viewController id="E8o-Yf-Elp" customClass="UploadNationalCardPhotoViewController" customModule="Refah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="E8o-Yf-Elp" customClass="NationalCardViewController" customModule="Refah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DUm-IL-ybe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

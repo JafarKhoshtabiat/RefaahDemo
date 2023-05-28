@@ -1,5 +1,5 @@
 //
-//  UploadNationalCardPhotoViewController.swift
+//  NationalCardViewController.swift
 //  Refah
 //
 //  Created by Jafar Khoshtabiat on 4/28/23.
@@ -8,7 +8,7 @@
 import UIKit
 import PhotosUI
 
-class UploadNationalCardPhotoViewController: UIViewController {
+class NationalCardViewController: UIViewController {
 
     @IBOutlet weak var uploadFrontPhotoButton: UIButton!
     @IBOutlet weak var uploadBackPhotoButton: UIButton!
@@ -90,7 +90,7 @@ class UploadNationalCardPhotoViewController: UIViewController {
     */
 }
 
-extension UploadNationalCardPhotoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension NationalCardViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true)
         
@@ -110,7 +110,7 @@ extension UploadNationalCardPhotoViewController: UIImagePickerControllerDelegate
     }
 }
 
-extension UploadNationalCardPhotoViewController: PHPickerViewControllerDelegate {
+extension NationalCardViewController: PHPickerViewControllerDelegate {
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         picker.dismiss(animated: true)
         
