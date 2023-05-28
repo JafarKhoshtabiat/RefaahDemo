@@ -109,73 +109,11 @@
                     <view key="view" contentMode="scaleToFill" id="Hqc-Gt-Vhj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ساخت حساب کاربری" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgE-L8-DA3" userLabel="CreateNewAccount">
-                                <rect key="frame" x="122.66666666666667" y="79" width="147.66666666666663" height="21.666666666666671"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لطفا کدملی خود را به درستی در کادر زیر وارد نمائید." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs9-mU-mlL" userLabel="NationalIdPrompt">
-                                <rect key="frame" x="30" y="140.66666666666666" width="333" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.28627450980000002" green="0.31372549020000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="کدملی" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V4f-KW-FXL" userLabel="NationalCode">
-                                <rect key="frame" x="30" y="177.66666666666666" width="333" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="z1d-3R-qq8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
-                                <connections>
-                                    <action selector="nationalcodeTextFieldEditingChanged:" destination="YR0-Pc-6xa" eventType="editingChanged" id="96l-zZ-nqR"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9o-Dk-tO0" userLabel="NationalCodeValid">
-                                <rect key="frame" x="332" y="247.66666666666666" width="31" height="14.999999999999972"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zY-fd-hbN" userLabel="Next">
-                                <rect key="frame" x="30" y="728" width="333" height="50"/>
-                                <color key="backgroundColor" red="0.92549019610000005" green="0.52941176469999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="yYq-Px-93O"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="مرحله بعد"/>
-                                <connections>
-                                    <action selector="nextButtonPressed:" destination="YR0-Pc-6xa" eventType="touchUpInside" id="MHh-TY-ogM"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NCl-Eq-tVq"/>
                         <color key="backgroundColor" red="0.94509803921568625" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="NCl-Eq-tVq" firstAttribute="trailing" secondItem="hs9-mU-mlL" secondAttribute="trailing" constant="30" id="3K0-Vu-icd"/>
-                            <constraint firstItem="hs9-mU-mlL" firstAttribute="centerX" secondItem="NCl-Eq-tVq" secondAttribute="centerX" id="3bJ-bV-Mvk"/>
-                            <constraint firstItem="JgE-L8-DA3" firstAttribute="top" secondItem="NCl-Eq-tVq" secondAttribute="top" constant="20" id="3gg-Ib-a2b"/>
-                            <constraint firstItem="V4f-KW-FXL" firstAttribute="trailing" secondItem="hs9-mU-mlL" secondAttribute="trailing" id="63D-ch-VlB"/>
-                            <constraint firstItem="V4f-KW-FXL" firstAttribute="centerX" secondItem="NCl-Eq-tVq" secondAttribute="centerX" id="OId-36-AXG"/>
-                            <constraint firstItem="hs9-mU-mlL" firstAttribute="top" secondItem="JgE-L8-DA3" secondAttribute="bottom" constant="40" id="V73-gb-q2M"/>
-                            <constraint firstItem="z9o-Dk-tO0" firstAttribute="trailing" secondItem="V4f-KW-FXL" secondAttribute="trailing" id="Vfr-Mt-xOZ"/>
-                            <constraint firstItem="V4f-KW-FXL" firstAttribute="top" secondItem="hs9-mU-mlL" secondAttribute="bottom" constant="20" id="X4h-Lh-Vfo"/>
-                            <constraint firstItem="NCl-Eq-tVq" firstAttribute="bottom" secondItem="7zY-fd-hbN" secondAttribute="bottom" constant="40" id="XuV-Wm-b0n"/>
-                            <constraint firstItem="7zY-fd-hbN" firstAttribute="centerX" secondItem="NCl-Eq-tVq" secondAttribute="centerX" id="ZyH-yO-7kB"/>
-                            <constraint firstItem="NCl-Eq-tVq" firstAttribute="trailing" secondItem="7zY-fd-hbN" secondAttribute="trailing" constant="30" id="bb1-Y0-Cka"/>
-                            <constraint firstItem="JgE-L8-DA3" firstAttribute="centerX" secondItem="NCl-Eq-tVq" secondAttribute="centerX" id="xF6-kd-QPO"/>
-                            <constraint firstItem="z9o-Dk-tO0" firstAttribute="top" secondItem="V4f-KW-FXL" secondAttribute="bottom" constant="20" id="xs6-kg-sM3"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="nationalCodeTextField" destination="V4f-KW-FXL" id="Wmm-DY-bYm"/>
-                        <outlet property="nationalCodeValidLabel" destination="z9o-Dk-tO0" id="zn8-hM-RYT"/>
-                        <outlet property="nextButton" destination="7zY-fd-hbN" id="7Cz-YP-wLi"/>
-                        <segue destination="E8o-Yf-Elp" kind="custom" identifier="nationalCodeToNationalCardPhotoSegue" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="D8o-JW-1PW"/>
+                        <segue destination="E8o-Yf-Elp" kind="custom" identifier="NationalCode_to_NationalCard" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="D8o-JW-1PW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmY-FU-u5U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

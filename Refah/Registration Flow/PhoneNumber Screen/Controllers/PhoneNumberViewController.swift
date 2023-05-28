@@ -8,7 +8,7 @@
 import UIKit
 
 class PhoneNumberViewController: UIViewController {
-    private var phoneNumberView: PhoneNumberViewProtocol = PhoneNumberView()
+    private var phoneNumberView: RegistrationFlowView_FirstResponderTextField_ValidatoinLabel_NextButton_Protocol = PhoneNumberView()
     var phoneNumberIsValid = false
     
     override func viewDidLoad() {
@@ -42,16 +42,16 @@ extension PhoneNumberViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard string != " " else { return false }
         guard string != "\n" else { return false }
-        
+
         if string == "" {
             return true
         }
-        
+
         let digits = "0123456789"
         if digits.contains(string) {
             return true
         }
-        
+
         return false
     }
 }

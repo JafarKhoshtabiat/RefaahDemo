@@ -1,34 +1,34 @@
 //
-//  PhoneNumberView.swift
+//  NationalCodeView.swift
 //  Refah
 //
-//  Created by Jafar Khoshtabiat on 5/27/23.
+//  Created by Jafar Khoshtabiat on 5/28/23.
 //
 
-import UIKit
+import Foundation
 
-class PhoneNumberView: RegistrationFlowView_TextField_ValidatoinLabel_NextButton {
+class NationalCodeView: RegistrationFlowView_TextField_ValidatoinLabel_NextButton {
     override var prompt: String {
         get {
-            return "لطفا شماره موبایل خود را به درستی در کادر زیر وارد نمائید."
+            return "لطفا کدملی خود را به درستی در کادر زیر وارد نمائید."
         }
         set {}
     }
     override var placeholderText: String {
         get {
-            return "09123456789"
+            return "کدملی"
         }
         set {}
     }
     override var isValidText: String {
         get {
-            return "شماره موبایل معتبر است."
+            return "کدملی معتبر است."
         }
         set {}
     }
     override var isNotValidText: String {
         get {
-            return "شماره موبایل معتبر نیست."
+            return "کدملی معتبر نیست."
         }
         set {}
     }
@@ -44,10 +44,10 @@ class PhoneNumberView: RegistrationFlowView_TextField_ValidatoinLabel_NextButton
     }
     
     private func createSubviews() {
-        self.textField.textContentType = .telephoneNumber
         self.textField.keyboardType = .asciiCapableNumberPad
     }
 }
 
-extension PhoneNumberView: RegistrationFlowView_FirstResponderTextField_ValidatoinLabel_NextButton_Protocol {
+extension NationalCodeView: RegistrationFlowView_FirstResponderTextField_ValidatoinLabel_NextButton_Protocol {
+    
 }
