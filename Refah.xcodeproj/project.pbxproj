@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C13427B2A24A1320044C88B /* PostalAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13427A2A24A1320044C88B /* PostalAddressView.swift */; };
 		0C1BCEF329FE57AF00E805B3 /* extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BCEF229FE57AF00E805B3 /* extension+UIViewController.swift */; };
 		0C1BCEF529FE6B6F00E805B3 /* OneTimeCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BCEF429FE6B6F00E805B3 /* OneTimeCodeViewController.swift */; };
 		0C1BCEF729FE712B00E805B3 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BCEF629FE712B00E805B3 /* CustomSegue.swift */; };
@@ -31,12 +32,22 @@
 		0C25830C2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25830B2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift */; };
 		0C25830F2A22BB000064BD7A /* NationalCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C25830E2A22BB000064BD7A /* NationalCodeView.swift */; };
 		0C2583142A2342300064BD7A /* NationalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2583132A2342300064BD7A /* NationalCardView.swift */; };
+		0C334A4C2A2DD495005A21ED /* ConfigurationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C334A4B2A2DD495005A21ED /* ConfigurationConstants.swift */; };
 		0C53EAF02A0B921F003F8E5B /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */; };
 		0C552AAE2A23B80F00B21566 /* UploadingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C552AAD2A23B80F00B21566 /* UploadingStatus.swift */; };
 		0C552AB02A23B83A00B21566 /* NationalCardPhotoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C552AAF2A23B83A00B21566 /* NationalCardPhotoProtocol.swift */; };
 		0C552AB22A23B86200B21566 /* NationalCardPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C552AB12A23B86200B21566 /* NationalCardPhoto.swift */; };
 		0C552AB42A23B89600B21566 /* UploadPhotoButtonsTouchUpInsideDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C552AB32A23B89600B21566 /* UploadPhotoButtonsTouchUpInsideDelegate.swift */; };
-		0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */; };
+		0C55AC662A2F40B2003778D0 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC652A2F40B2003778D0 /* State.swift */; };
+		0C55AC682A2F4195003778D0 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC672A2F4195003778D0 /* City.swift */; };
+		0C55AC6A2A2F42DF003778D0 /* PickingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC692A2F42DF003778D0 /* PickingStatus.swift */; };
+		0C55AC6C2A2F4325003778D0 /* StatesOrCitiesRetrievalDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC6B2A2F4325003778D0 /* StatesOrCitiesRetrievalDelegateProtocol.swift */; };
+		0C55AC6E2A2F438F003778D0 /* PostalAddressPickerViewDelegateAndDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC6D2A2F438F003778D0 /* PostalAddressPickerViewDelegateAndDataSourceProtocol.swift */; };
+		0C55AC702A2F43DC003778D0 /* PostalAddressPickerViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC6F2A2F43DC003778D0 /* PostalAddressPickerViewDelegateAndDataSource.swift */; };
+		0C55AC722A2FF9F7003778D0 /* PostalAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC712A2FF9F7003778D0 /* PostalAddress.swift */; };
+		0C55AC742A3088F3003778D0 /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC732A3088F3003778D0 /* MyError.swift */; };
+		0C55AC762A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC752A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift */; };
+		0C5A1A502A00F973007B3008 /* PostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A1A4F2A00F973007B3008 /* PostalAddressViewController.swift */; };
 		0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */; };
 		0C7D8EB329FD8CC600D4291F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D8EB229FD8CC600D4291F /* Colors.xcassets */; };
 		0C895D622A23C39800E8C7B0 /* NationalCardViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C895D612A23C39800E8C7B0 /* NationalCardViewProtocol.swift */; };
@@ -75,6 +86,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C13427A2A24A1320044C88B /* PostalAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressView.swift; sourceTree = "<group>"; };
 		0C1BCEF229FE57AF00E805B3 /* extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIViewController.swift"; sourceTree = "<group>"; };
 		0C1BCEF429FE6B6F00E805B3 /* OneTimeCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeViewController.swift; sourceTree = "<group>"; };
 		0C1BCEF629FE712B00E805B3 /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
@@ -99,12 +111,22 @@
 		0C25830B2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeViewProtocol.swift; sourceTree = "<group>"; };
 		0C25830E2A22BB000064BD7A /* NationalCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCodeView.swift; sourceTree = "<group>"; };
 		0C2583132A2342300064BD7A /* NationalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCardView.swift; sourceTree = "<group>"; };
+		0C334A4B2A2DD495005A21ED /* ConfigurationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationConstants.swift; sourceTree = "<group>"; };
 		0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		0C552AAD2A23B80F00B21566 /* UploadingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadingStatus.swift; sourceTree = "<group>"; };
 		0C552AAF2A23B83A00B21566 /* NationalCardPhotoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCardPhotoProtocol.swift; sourceTree = "<group>"; };
 		0C552AB12A23B86200B21566 /* NationalCardPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCardPhoto.swift; sourceTree = "<group>"; };
 		0C552AB32A23B89600B21566 /* UploadPhotoButtonsTouchUpInsideDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoButtonsTouchUpInsideDelegate.swift; sourceTree = "<group>"; };
-		0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPostalAddressViewController.swift; sourceTree = "<group>"; };
+		0C55AC652A2F40B2003778D0 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		0C55AC672A2F4195003778D0 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		0C55AC692A2F42DF003778D0 /* PickingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingStatus.swift; sourceTree = "<group>"; };
+		0C55AC6B2A2F4325003778D0 /* StatesOrCitiesRetrievalDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesOrCitiesRetrievalDelegateProtocol.swift; sourceTree = "<group>"; };
+		0C55AC6D2A2F438F003778D0 /* PostalAddressPickerViewDelegateAndDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressPickerViewDelegateAndDataSourceProtocol.swift; sourceTree = "<group>"; };
+		0C55AC6F2A2F43DC003778D0 /* PostalAddressPickerViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressPickerViewDelegateAndDataSource.swift; sourceTree = "<group>"; };
+		0C55AC712A2FF9F7003778D0 /* PostalAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddress.swift; sourceTree = "<group>"; };
+		0C55AC732A3088F3003778D0 /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
+		0C55AC752A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressButtonsTouchUpInsideDelegate.swift; sourceTree = "<group>"; };
+		0C5A1A4F2A00F973007B3008 /* PostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressViewController.swift; sourceTree = "<group>"; };
 		0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCodeViewController.swift; sourceTree = "<group>"; };
 		0C7D8EB229FD8CC600D4291F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0C895D612A23C39800E8C7B0 /* NationalCardViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCardViewProtocol.swift; sourceTree = "<group>"; };
@@ -170,6 +192,16 @@
 				0CA4E31F29F8823D008D7FBB /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0C1342792A249FBA0044C88B /* PostalAddress Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0C55AC772A30895C003778D0 /* Views */,
+				0C55AC782A308967003778D0 /* Controllers */,
+				0C55AC792A30896E003778D0 /* Models */,
+			);
+			path = "PostalAddress Screen";
 			sourceTree = "<group>";
 		};
 		0C2582DB2A20AEF80064BD7A /* RepresentiveCode Screen */ = {
@@ -327,6 +359,37 @@
 			path = "Login Flow";
 			sourceTree = "<group>";
 		};
+		0C55AC772A30895C003778D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C13427A2A24A1320044C88B /* PostalAddressView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C55AC782A308967003778D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C5A1A4F2A00F973007B3008 /* PostalAddressViewController.swift */,
+				0C55AC6B2A2F4325003778D0 /* StatesOrCitiesRetrievalDelegateProtocol.swift */,
+				0C55AC6D2A2F438F003778D0 /* PostalAddressPickerViewDelegateAndDataSourceProtocol.swift */,
+				0C55AC6F2A2F43DC003778D0 /* PostalAddressPickerViewDelegateAndDataSource.swift */,
+				0C55AC752A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0C55AC792A30896E003778D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C55AC652A2F40B2003778D0 /* State.swift */,
+				0C55AC672A2F4195003778D0 /* City.swift */,
+				0C55AC692A2F42DF003778D0 /* PickingStatus.swift */,
+				0C55AC712A2FF9F7003778D0 /* PostalAddress.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0C7D8EB429FDAEDE00D4291F /* Registration Flow */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,11 +400,11 @@
 				0C2582FF2A21FE1F0064BD7A /* OneTimeCode Screen */,
 				0C25830D2A22BA3D0064BD7A /* NationalCode Screen */,
 				0C2583122A233EE10064BD7A /* NationalCard Screen */,
+				0C1342792A249FBA0044C88B /* PostalAddress Screen */,
 				0CA3DF5329FC38E80059DEB5 /* ChooseBankAccountsViewController.swift */,
 				0CA3DF5529FC526A0059DEB5 /* BankAccountTableViewCell.swift */,
 				0CA3DF5929FC57FB0059DEB5 /* SetPasswordViewController.swift */,
 				0CA3DF5629FC526A0059DEB5 /* BankAccountTableViewCell.xib */,
-				0C5A1A4F2A00F973007B3008 /* SetPostalAddressViewController.swift */,
 				0CA3DF4F29FC330D0059DEB5 /* NewAccountCreatedViewController.swift */,
 			);
 			path = "Registration Flow";
@@ -435,6 +498,8 @@
 				0CAFB9252A1EC6CE002F0C72 /* extension+UIColor.swift */,
 				0C1BCEF629FE712B00E805B3 /* CustomSegue.swift */,
 				0C1BCEF829FE715400E805B3 /* CustomSegueWithBack.swift */,
+				0C334A4B2A2DD495005A21ED /* ConfigurationConstants.swift */,
+				0C55AC732A3088F3003778D0 /* MyError.swift */,
 			);
 			path = Refah;
 			sourceTree = "<group>";
@@ -593,17 +658,20 @@
 				0C2583082A22AA330064BD7A /* OTCProtocol.swift in Sources */,
 				0CA4E31529F8823C008D7FBB /* AppDelegate.swift in Sources */,
 				0CA4E31729F8823C008D7FBB /* SceneDelegate.swift in Sources */,
+				0C55AC6A2A2F42DF003778D0 /* PickingStatus.swift in Sources */,
 				0CA3372429F9D31000A40E39 /* LoginViewController.swift in Sources */,
 				0C1BCEF329FE57AF00E805B3 /* extension+UIViewController.swift in Sources */,
 				0C552AAE2A23B80F00B21566 /* UploadingStatus.swift in Sources */,
+				0C334A4C2A2DD495005A21ED /* ConfigurationConstants.swift in Sources */,
 				0C552AB02A23B83A00B21566 /* NationalCardPhotoProtocol.swift in Sources */,
+				0C55AC762A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift in Sources */,
 				0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */,
 				0CAFB9262A1EC6CE002F0C72 /* extension+UIColor.swift in Sources */,
 				0C25830C2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift in Sources */,
 				0C2583142A2342300064BD7A /* NationalCardView.swift in Sources */,
 				0C1BCEF929FE715400E805B3 /* CustomSegueWithBack.swift in Sources */,
 				0C2582E52A212B6D0064BD7A /* RegistrationFlowNextDelegate.swift in Sources */,
-				0C5A1A502A00F973007B3008 /* SetPostalAddressViewController.swift in Sources */,
+				0C5A1A502A00F973007B3008 /* PostalAddressViewController.swift in Sources */,
 				0CAFB9282A1ECD98002F0C72 /* LaunchViewWithProgressViewProtocol.swift in Sources */,
 				0C25830F2A22BB000064BD7A /* NationalCodeView.swift in Sources */,
 				0C2582FE2A21F76F0064BD7A /* RegistrationFlowView_FirstResponderTextField_ValidatoinLabel_NextButton_Protocol.swift in Sources */,
@@ -614,18 +682,25 @@
 				0C2582E12A20E96C0064BD7A /* RegistrationFlowView_NextButton_Protocol.swift in Sources */,
 				0C2583052A226C1F0064BD7A /* OTCTextFieldTag.swift in Sources */,
 				0C2582EB2A2147290064BD7A /* TextFieldEditingChangedDelegate.swift in Sources */,
+				0C13427B2A24A1320044C88B /* PostalAddressView.swift in Sources */,
+				0C55AC682A2F4195003778D0 /* City.swift in Sources */,
 				0CCC62702A2078BC00E8DC38 /* RegistrationStatusView.swift in Sources */,
 				0CF5AA1A29FAC36F0003901B /* RepresentiveCodeViewController.swift in Sources */,
 				0C2582DA2A209B010064BD7A /* RegistrationStatusViewProtocol.swift in Sources */,
 				0CA3DF5A29FC57FB0059DEB5 /* SetPasswordViewController.swift in Sources */,
 				0C2582E72A212EF90064BD7A /* RegistrationFlowView_TextField_NextButton_Protocol.swift in Sources */,
+				0C55AC662A2F40B2003778D0 /* State.swift in Sources */,
 				0C552AB22A23B86200B21566 /* NationalCardPhoto.swift in Sources */,
+				0C55AC6C2A2F4325003778D0 /* StatesOrCitiesRetrievalDelegateProtocol.swift in Sources */,
+				0C55AC742A3088F3003778D0 /* MyError.swift in Sources */,
 				0CF5AA1C29FB1FF30003901B /* PhoneNumberViewController.swift in Sources */,
 				0C25830A2A22AA5F0064BD7A /* OTC.swift in Sources */,
+				0C55AC6E2A2F438F003778D0 /* PostalAddressPickerViewDelegateAndDataSourceProtocol.swift in Sources */,
 				0C2582E92A212F570064BD7A /* RegistrationFlowView_TextField_NextButton.swift in Sources */,
 				0C552AB42A23B89600B21566 /* UploadPhotoButtonsTouchUpInsideDelegate.swift in Sources */,
 				0CA3DF5429FC38E80059DEB5 /* ChooseBankAccountsViewController.swift in Sources */,
 				0C895D622A23C39800E8C7B0 /* NationalCardViewProtocol.swift in Sources */,
+				0C55AC702A2F43DC003778D0 /* PostalAddressPickerViewDelegateAndDataSource.swift in Sources */,
 				0CA3DF5729FC526A0059DEB5 /* BankAccountTableViewCell.swift in Sources */,
 				0C2582E32A20EDA70064BD7A /* RegistrationFlowView_NextButton.swift in Sources */,
 				0CA3DF5029FC330D0059DEB5 /* NewAccountCreatedViewController.swift in Sources */,
@@ -633,6 +708,7 @@
 				0C1BCEF729FE712B00E805B3 /* CustomSegue.swift in Sources */,
 				0CA3372229F9AC1E00A40E39 /* RegistrationStatusViewController.swift in Sources */,
 				0C2582F62A21E07E0064BD7A /* PhoneNumberView.swift in Sources */,
+				0C55AC722A2FF9F7003778D0 /* PostalAddress.swift in Sources */,
 				0C2582ED2A2154DA0064BD7A /* RepresentiveCodeViewProtocol.swift in Sources */,
 				0C2583032A2204550064BD7A /* OneTimeCodeView.swift in Sources */,
 			);

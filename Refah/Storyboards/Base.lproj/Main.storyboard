@@ -3,8 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -138,175 +137,18 @@
             </objects>
             <point key="canvasLocation" x="4868" y="-27"/>
         </scene>
-        <!--Set Postal Address View Controller-->
+        <!--Postal Address View Controller-->
         <scene sceneID="gt5-ps-enO">
             <objects>
-                <viewController id="Ltv-V5-jIR" customClass="SetPostalAddressViewController" customModule="Refah" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ltv-V5-jIR" customClass="PostalAddressViewController" customModule="Refah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="50y-jY-jO9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ساخت حساب کاربری" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJe-nU-0pu" userLabel="CreateNewAccount">
-                                <rect key="frame" x="122.66666666666667" y="79" width="147.66666666666663" height="21.666666666666671"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لطفا استان و شهر و کدپستی محل سکونت خود را وارد نمایید." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTC-EU-eM1" userLabel="PostalAddressPrompt">
-                                <rect key="frame" x="30" y="140.66666666666666" width="333" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.28627450980000002" green="0.31372549020000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCn-3Z-sc8" userLabel="PickState">
-                                <rect key="frame" x="216.66666666666663" y="177.66666666666666" width="146.33333333333337" height="35"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="انتخاب استان"/>
-                                <connections>
-                                    <action selector="pickStateButtonPressed:" destination="Ltv-V5-jIR" eventType="touchUpInside" id="CeX-6T-r6r"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نام استان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-0t-xEV" userLabel="StateName">
-                                <rect key="frame" x="30" y="177.66666666666666" width="146.66666666666666" height="35"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="Trout"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giE-dL-7uV" userLabel="PickCity">
-                                <rect key="frame" x="216.66666666666663" y="232.66666666666666" width="146.33333333333337" height="34.999999999999972"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="انتخاب شهر"/>
-                                <connections>
-                                    <action selector="pickCityButtonPressed:" destination="Ltv-V5-jIR" eventType="touchUpInside" id="JxS-ot-D73"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نام شهر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bit-Ez-t5w" userLabel="CityName">
-                                <rect key="frame" x="30" y="232.66666666666666" width="146.66666666666666" height="34.999999999999972"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="Trout"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="کدپستی" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WS9-6R-wYX" userLabel="PostalCode">
-                                <rect key="frame" x="30" y="287.66666666666669" width="333" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="sb6-h6-627"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad" textContentType="postal-code"/>
-                                <connections>
-                                    <action selector="postalCodeEditingChanged:" destination="Ltv-V5-jIR" eventType="editingChanged" id="zAf-T5-BYk"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzy-6i-eM2" userLabel="PostalCodeValid">
-                                <rect key="frame" x="332" y="357.66666666666669" width="31" height="15"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpZ-fZ-aah" userLabel="Next">
-                                <rect key="frame" x="30" y="728" width="333" height="50"/>
-                                <color key="backgroundColor" red="0.92549019610000005" green="0.52941176469999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="zo1-zD-6Rl"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="مرحله بعد"/>
-                                <connections>
-                                    <action selector="nextButtonPressed:" destination="Ltv-V5-jIR" eventType="touchUpInside" id="uvW-ZP-FmP"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ji9-ty-i92" userLabel="ShadowView">
-                                <rect key="frame" x="0.0" y="12.666666666666686" width="393" height="852"/>
-                                <color key="backgroundColor" red="0.35294117647058826" green="0.40000000000000002" blue="0.45098039215686275" alpha="0.59525041390728473" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" name="DarkGrayishBlue"/>
-                            </view>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Oev-NB-lDa">
-                                <rect key="frame" x="176.66666666666666" y="418.66666666666669" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="n4q-49-EnF"/>
-                                    <constraint firstAttribute="width" constant="40" id="rtH-Wh-nFQ"/>
-                                </constraints>
-                            </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl2-J8-cKS" userLabel="Confirm">
-                                <rect key="frame" x="123.33333333333333" y="275.66666666666669" width="146.33333333333337" height="35"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="تأیید"/>
-                                <connections>
-                                    <action selector="confrimButtonPressed:" destination="Ltv-V5-jIR" eventType="touchUpInside" id="0yC-AH-a0O"/>
-                                </connections>
-                            </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7d-f9-5ak">
-                                <rect key="frame" x="36.666666666666657" y="330.66666666666669" width="320" height="216.00000000000006"/>
-                                <color key="backgroundColor" name="DarkGrayishBlue"/>
-                            </pickerView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="J9d-Ad-cVn"/>
                         <color key="backgroundColor" red="0.94509803921568625" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="SCn-3Z-sc8" firstAttribute="leading" secondItem="J9d-Ad-cVn" secondAttribute="centerX" constant="20" id="09f-Aw-PfE"/>
-                            <constraint firstItem="PJe-nU-0pu" firstAttribute="centerX" secondItem="J9d-Ad-cVn" secondAttribute="centerX" id="1si-Ul-lY7"/>
-                            <constraint firstItem="Bit-Ez-t5w" firstAttribute="top" secondItem="giE-dL-7uV" secondAttribute="top" id="2TC-Sa-IlB"/>
-                            <constraint firstItem="I7d-f9-5ak" firstAttribute="centerX" secondItem="J9d-Ad-cVn" secondAttribute="centerX" id="2av-yZ-Skk"/>
-                            <constraint firstItem="J9d-Ad-cVn" firstAttribute="trailing" secondItem="QpZ-fZ-aah" secondAttribute="trailing" constant="30" id="3HY-xR-VUU"/>
-                            <constraint firstItem="Oev-NB-lDa" firstAttribute="centerY" secondItem="J9d-Ad-cVn" secondAttribute="centerY" id="5EJ-VT-M8m"/>
-                            <constraint firstItem="Kzy-6i-eM2" firstAttribute="trailing" secondItem="WS9-6R-wYX" secondAttribute="trailing" id="67k-OK-kZ2"/>
-                            <constraint firstItem="cl2-J8-cKS" firstAttribute="centerX" secondItem="I7d-f9-5ak" secondAttribute="centerX" id="7fk-D6-U6I"/>
-                            <constraint firstItem="J9d-Ad-cVn" firstAttribute="centerX" secondItem="ldJ-0t-xEV" secondAttribute="trailing" constant="20" id="7wf-8U-NTW"/>
-                            <constraint firstItem="giE-dL-7uV" firstAttribute="top" secondItem="SCn-3Z-sc8" secondAttribute="bottom" constant="20" id="8fr-08-LXd"/>
-                            <constraint firstItem="WS9-6R-wYX" firstAttribute="leading" secondItem="Bit-Ez-t5w" secondAttribute="leading" id="8v8-qQ-L34"/>
-                            <constraint firstItem="Ji9-ty-i92" firstAttribute="centerX" secondItem="J9d-Ad-cVn" secondAttribute="centerX" id="CzM-MI-bVS"/>
-                            <constraint firstItem="Kzy-6i-eM2" firstAttribute="top" secondItem="WS9-6R-wYX" secondAttribute="bottom" constant="20" id="Dvc-Kc-qyX"/>
-                            <constraint firstItem="giE-dL-7uV" firstAttribute="trailing" secondItem="SCn-3Z-sc8" secondAttribute="trailing" id="Edv-3i-x7N"/>
-                            <constraint firstItem="cl2-J8-cKS" firstAttribute="height" secondItem="giE-dL-7uV" secondAttribute="height" id="HpD-C5-Qyb"/>
-                            <constraint firstItem="XTC-EU-eM1" firstAttribute="top" secondItem="PJe-nU-0pu" secondAttribute="bottom" constant="40" id="Jdh-3m-LL5"/>
-                            <constraint firstItem="WS9-6R-wYX" firstAttribute="trailing" secondItem="giE-dL-7uV" secondAttribute="trailing" id="Jnq-GH-VbH"/>
-                            <constraint firstItem="J9d-Ad-cVn" firstAttribute="trailing" secondItem="XTC-EU-eM1" secondAttribute="trailing" constant="30" id="L4q-Wb-tM5"/>
-                            <constraint firstItem="ldJ-0t-xEV" firstAttribute="leading" secondItem="XTC-EU-eM1" secondAttribute="leading" id="Myz-IV-I2T"/>
-                            <constraint firstItem="SCn-3Z-sc8" firstAttribute="trailing" secondItem="XTC-EU-eM1" secondAttribute="trailing" id="NMe-tP-ace"/>
-                            <constraint firstItem="Ji9-ty-i92" firstAttribute="width" secondItem="50y-jY-jO9" secondAttribute="width" id="NSB-ei-K7X"/>
-                            <constraint firstItem="giE-dL-7uV" firstAttribute="width" secondItem="SCn-3Z-sc8" secondAttribute="width" id="OCC-fH-nNh"/>
-                            <constraint firstItem="Oev-NB-lDa" firstAttribute="centerX" secondItem="J9d-Ad-cVn" secondAttribute="centerX" id="Wxu-9H-YBS"/>
-                            <constraint firstItem="I7d-f9-5ak" firstAttribute="top" secondItem="cl2-J8-cKS" secondAttribute="bottom" constant="20" id="Zdc-zu-kqr"/>
-                            <constraint firstItem="giE-dL-7uV" firstAttribute="height" secondItem="SCn-3Z-sc8" secondAttribute="height" id="bz5-aQ-efD"/>
-                            <constraint firstItem="Ji9-ty-i92" firstAttribute="height" secondItem="50y-jY-jO9" secondAttribute="height" id="cZs-f8-1FS"/>
-                            <constraint firstItem="WS9-6R-wYX" firstAttribute="top" secondItem="giE-dL-7uV" secondAttribute="bottom" constant="20" id="dGy-dq-oPL"/>
-                            <constraint firstItem="Bit-Ez-t5w" firstAttribute="width" secondItem="ldJ-0t-xEV" secondAttribute="width" id="ejI-16-9qc"/>
-                            <constraint firstItem="XTC-EU-eM1" firstAttribute="centerX" secondItem="J9d-Ad-cVn" secondAttribute="centerX" id="fwM-KK-Ab2"/>
-                            <constraint firstItem="QpZ-fZ-aah" firstAttribute="centerX" secondItem="J9d-Ad-cVn" secondAttribute="centerX" id="ibs-8P-NqS"/>
-                            <constraint firstItem="I7d-f9-5ak" firstAttribute="centerY" secondItem="J9d-Ad-cVn" secondAttribute="centerY" id="jCS-Ic-VFZ"/>
-                            <constraint firstItem="ldJ-0t-xEV" firstAttribute="height" secondItem="SCn-3Z-sc8" secondAttribute="height" id="mBe-oW-vTJ"/>
-                            <constraint firstItem="cl2-J8-cKS" firstAttribute="width" secondItem="giE-dL-7uV" secondAttribute="width" id="pMY-Ov-lWc"/>
-                            <constraint firstItem="SCn-3Z-sc8" firstAttribute="top" secondItem="XTC-EU-eM1" secondAttribute="bottom" constant="20" id="pY0-2I-qml"/>
-                            <constraint firstItem="Bit-Ez-t5w" firstAttribute="height" secondItem="ldJ-0t-xEV" secondAttribute="height" id="pgy-Vw-32a"/>
-                            <constraint firstItem="Ji9-ty-i92" firstAttribute="centerY" secondItem="J9d-Ad-cVn" secondAttribute="centerY" id="r0v-4J-pOc"/>
-                            <constraint firstItem="PJe-nU-0pu" firstAttribute="top" secondItem="J9d-Ad-cVn" secondAttribute="top" constant="20" id="rsd-aI-PIh"/>
-                            <constraint firstItem="J9d-Ad-cVn" firstAttribute="bottom" secondItem="QpZ-fZ-aah" secondAttribute="bottom" constant="40" id="vBv-fy-p61"/>
-                            <constraint firstItem="ldJ-0t-xEV" firstAttribute="top" secondItem="SCn-3Z-sc8" secondAttribute="top" id="vMY-GF-guu"/>
-                            <constraint firstItem="Bit-Ez-t5w" firstAttribute="centerX" secondItem="ldJ-0t-xEV" secondAttribute="centerX" id="yWX-YE-2Me"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="activityIndicator" destination="Oev-NB-lDa" id="6VO-nA-M7i"/>
-                        <outlet property="cityNameLabel" destination="Bit-Ez-t5w" id="uUK-sE-RXz"/>
-                        <outlet property="confrimButton" destination="cl2-J8-cKS" id="Q0X-6T-Uig"/>
-                        <outlet property="nextButton" destination="QpZ-fZ-aah" id="nfz-wK-4Dz"/>
-                        <outlet property="pickCityButton" destination="giE-dL-7uV" id="D0p-VP-5ZW"/>
-                        <outlet property="pickStateButton" destination="SCn-3Z-sc8" id="H90-Kc-jsU"/>
-                        <outlet property="pickerView" destination="I7d-f9-5ak" id="WgS-yc-wIf"/>
-                        <outlet property="postalCodeTextField" destination="WS9-6R-wYX" id="4jt-gY-edZ"/>
-                        <outlet property="postalCodeValidLabel" destination="Kzy-6i-eM2" id="KF0-93-ZXO"/>
-                        <outlet property="shadowView" destination="Ji9-ty-i92" id="Spt-xq-wdQ"/>
-                        <outlet property="stateNameLabel" destination="ldJ-0t-xEV" id="jcD-St-pQm"/>
-                        <segue destination="LkI-vu-Pwc" kind="custom" identifier="postalAddressToPasswordSegue" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="7ke-Za-UB8"/>
+                        <segue destination="LkI-vu-Pwc" kind="custom" identifier="PostalAddress_to_Password" customClass="CustomSegueWithBack" customModule="Refah" customModuleProvider="target" id="7ke-Za-UB8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWV-Ei-Z6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -895,12 +737,6 @@
         <image name="FingerPrint" width="63" height="69"/>
         <image name="GreenTic_47_42" width="47" height="42"/>
         <image name="ShowPassword" width="33" height="23"/>
-        <namedColor name="DarkGrayishBlue">
-            <color red="0.35294117647058826" green="0.40000000000000002" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Trout">
-            <color red="0.28627450980392155" green="0.31372549019607843" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
