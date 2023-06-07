@@ -8,5 +8,6 @@
 import Foundation
 
 struct ConfigurationConstants {
-    static let baseURL = "http://localhost:8080"
+//    static let baseURL = "http://localhost:8080"
+    static let baseURL = "http://65.109.202.174:8080"
 }
