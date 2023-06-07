@@ -36,7 +36,7 @@ extension OneTimeCodeViewController: RegistrationFlowNextDelegate {
         if self.otc.isAllOTCsEntered() {
             self.performSegue(withIdentifier: "OneTimeCode_to_NationalCode", sender: nil)
         } else {
-            self.presentUIAlertController(title: "", titleColor: UIColor.flameHawkfish!, message: "کد معتبر نیست.")
+            self.presentUIAlertController(title: "", titleColor: UIColor.flameHawkfish, message: "کد معتبر نیست.")
         }
     }
 }

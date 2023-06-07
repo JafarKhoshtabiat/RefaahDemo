@@ -37,7 +37,7 @@ extension NationalCardViewController {
                 
                 self.present(imagePickerController, animated: true)
             } else {
-                self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish!, message: "دسترسی به دوربین امکان‌پذیر نیست.")
+                self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish, message: "دسترسی به دوربین امکان‌پذیر نیست.")
             }
         }))
         
@@ -105,11 +105,11 @@ extension NationalCardViewController: RegistrationFlowNextDelegate {
         if self.nationalCardPhoto.hasFront() && self.nationalCardPhoto.hasBack() {
             self.performSegue(withIdentifier: "NationalCard_to_PostalAddress", sender: nil)
         } else if self.nationalCardPhoto.hasFront() && !self.nationalCardPhoto.hasBack() {
-            self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish!, message: "لطفا تصویر پشت کارت‌ملی خود را بارگزاری کنید.")
+            self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish, message: "لطفا تصویر پشت کارت‌ملی خود را بارگزاری کنید.")
         } else if !self.nationalCardPhoto.hasFront() && self.nationalCardPhoto.hasBack() {
-            self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish!, message: "لطفا تصویر روی کارت‌ملی خود را بارگزاری کنید.")
+            self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish, message: "لطفا تصویر روی کارت‌ملی خود را بارگزاری کنید.")
         } else {
-            self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish!, message: "لطفا تصویر پشت و روی کارت‌ملی خود را بارگزاری کنید.")
+            self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish, message: "لطفا تصویر پشت و روی کارت‌ملی خود را بارگزاری کنید.")
         }
     }
 }

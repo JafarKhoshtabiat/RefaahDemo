@@ -34,7 +34,7 @@ extension NationalCodeViewController: RegistrationFlowNextDelegate {
         if self.nationalCodeIsValid {
             self.performSegue(withIdentifier: "NationalCode_to_NationalCard", sender: nil)
         } else {
-            self.presentUIAlertController(title: "", titleColor: UIColor.flameHawkfish!, message: "کدملی واردشده معتبر نیست.")
+            self.presentUIAlertController(title: "", titleColor: UIColor.flameHawkfish, message: "کدملی واردشده معتبر نیست.")
         }
     }
 }

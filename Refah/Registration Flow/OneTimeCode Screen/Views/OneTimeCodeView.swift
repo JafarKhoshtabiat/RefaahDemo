@@ -43,7 +43,7 @@ class OneTimeCodeView: RegistrationFlowView_NextButton {
             otcTextField.keyboardType = .asciiCapableNumberPad
             otcTextField.layer.cornerRadius = 5
             otcTextField.layer.borderWidth = 2
-            otcTextField.layer.borderColor = UIColor.shadowMountain?.cgColor
+            otcTextField.layer.borderColor = UIColor.shadowMountain.cgColor
             otcTextField.backgroundColor = .white
             otcTextField.textAlignment = .center
             otcTextField.addTarget(self, action: #selector(self.textFieldEditingChanged), for: .editingChanged)

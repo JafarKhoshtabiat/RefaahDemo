@@ -33,7 +33,7 @@ extension PhoneNumberViewController: RegistrationFlowNextDelegate {
         if self.phoneNumberIsValid {
             self.performSegue(withIdentifier: "PhoneNumber_to_OTC", sender: nil)
         } else {
-            self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish!, message: "شماره موبایل معتبر نیست.")
+            self.presentUIAlertController(title: "عملیات ناموفق", titleColor: UIColor.flameHawkfish, message: "شماره موبایل معتبر نیست.")
         }
     }
 }

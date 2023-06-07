@@ -58,7 +58,7 @@ class RepresentiveCodeView: RegistrationFlowView_TextField_NextButton {
                              representiveCodeAvailabilityButtonWidthConstraint])
         self.representiveCodeAvailabilityButton.setBackgroundImage(UIImage(named: "RedTic_22_22"), for: .normal)
         self.representiveCodeAvailabilityButton.layer.borderWidth = 2
-        self.representiveCodeAvailabilityButton.layer.borderColor = UIColor.deepMagenta?.cgColor
+        self.representiveCodeAvailabilityButton.layer.borderColor = UIColor.deepMagenta.cgColor
         self.representiveCodeAvailabilityButton.layer.cornerRadius = 5
         self.representiveCodeAvailabilityButton.clipsToBounds = true
         self.representiveCodeAvailabilityButton.addTarget(self, action: #selector(self.representiveCodeAvailabilityButtonTouchUpInside), for: .touchUpInside)

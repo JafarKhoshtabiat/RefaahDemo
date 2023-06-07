@@ -86,7 +86,7 @@ class RegistrationStatusView: UIView {
                                                             toItem: newRegisterButton, attribute: .width,
                                                             multiplier: 1, constant: 0)
         self.addConstraints([loginButtonTopconstraint, loginButtonRightConstraint, loginButtonHeightConstraint, loginButtonWidthConstraint])
-        loginButton.layer.borderColor = UIColor.deepSeaDream?.cgColor
+        loginButton.layer.borderColor = UIColor.deepSeaDream.cgColor
         loginButton.layer.borderWidth = 2
         loginButton.layer.cornerRadius = 20
         loginButton.setTitle("ثبت‌نام کرده‌ام", for: .normal)
