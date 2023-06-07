@@ -34,7 +34,9 @@ class PostalAddressViewController: UIViewController {
     override func loadView() {
         self.view = self.postalAddressView
     }
-    
+}
+
+extension PostalAddressViewController {
     func getStatesAsync() async throws -> Data {
         let urlString = "\(ConfigurationConstants.baseURL)/states"
         guard let url = URL(string: urlString) else { throw MyError.error1 }
@@ -69,7 +71,9 @@ extension PostalAddressViewController: RegistrationFlowNextDelegate {
             await self.nextAsync()
         }
     }
-    
+}
+
+extension PostalAddressViewController {
     func nextAsync() async {
         guard self.currentStateIndex != -1, let state = self.states?[self.currentStateIndex] else {
             self.presentUIAlertController(title: "", titleColor: UIColor.flameHawkfish, message: "لطفا استان محل سکونت خود را انتخاب کنید.")
@@ -158,6 +162,45 @@ extension PostalAddressViewController: PostalAddressButtonsTouchUpInsideDelegate
         }
     }
     
+    func citiesButtonDidTouchUpInside() {
+        Task {
+            await self.citiesButtonDidTouchUpInsideAsync()
+        }
+    }
+    
+    func confirmButtonDidTouchUpInside() {
+        let selectedRow = self.postalAddressView.getSelectedRowInPickerView()
+        switch self.pickingStatus {
+        case .states:
+            if self.currentCityIndex != -1 && self.currentStateIndex != selectedRow {
+                self.currentCityIndex = -1
+                self.postalAddressView.resetCityNameLabel()
+            }
+            
+            if self.currentStateIndex != selectedRow {
+                guard let stateName = self.states?[selectedRow].name else { return }
+                self.currentStateIndex = selectedRow
+                self.postalAddressView.setStateNameLabelTo(stateName: stateName)
+            }
+        case .cities:
+            if self.currentCityIndex != selectedRow {
+                guard let cityName = self.cities?[selectedRow].name else { return }
+                self.currentCityIndex = selectedRow
+                self.postalAddressView.setCityNameLabelTo(cityName: cityName)
+            }
+        case .none:
+            break
+        }
+        
+        self.pickingStatus = .none
+        self.postalAddressPickerViewDelegateAndDataSource.setPickingStatus(status: .none)
+        self.postalAddressView.hidePickerView()
+        self.postalAddressView.hideConfirmButton()
+        self.postalAddressView.hideShadowView()
+    }
+}
+
+extension PostalAddressViewController {
     func statesButtonDidTouchUpInsideAsync() async {
         self.postalAddressView.showShadowView()
         self.postalAddressView.startAnimatingActivityIndicator()
@@ -182,12 +225,6 @@ extension PostalAddressViewController: PostalAddressButtonsTouchUpInsideDelegate
             self.postalAddressView.stopAnimatingActivityIndicator()
             self.postalAddressView.hideShadowView()
             self.presentUIAlertController(title: "", titleColor: UIColor.flameHawkfish, message: error.localizedDescription)
-        }
-    }
-    
-    func citiesButtonDidTouchUpInside() {
-        Task {
-            await self.citiesButtonDidTouchUpInsideAsync()
         }
     }
     
@@ -221,36 +258,5 @@ extension PostalAddressViewController: PostalAddressButtonsTouchUpInsideDelegate
             self.postalAddressView.hideShadowView()
             self.presentUIAlertController(title: "", titleColor: UIColor.flameHawkfish, message: error.localizedDescription)
         }
-    }
-    
-    func confirmButtonDidTouchUpInside() {
-        let selectedRow = self.postalAddressView.getSelectedRowInPickerView()
-        switch self.pickingStatus {
-        case .states:
-            if self.currentCityIndex != -1 && self.currentStateIndex != selectedRow {
-                self.currentCityIndex = -1
-                self.postalAddressView.resetCityNameLabel()
-            }
-            
-            if self.currentStateIndex != selectedRow {
-                guard let stateName = self.states?[selectedRow].name else { return }
-                self.currentStateIndex = selectedRow
-                self.postalAddressView.setStateNameLabelTo(stateName: stateName)
-            }
-        case .cities:
-            if self.currentCityIndex != selectedRow {
-                guard let cityName = self.cities?[selectedRow].name else { return }
-                self.currentCityIndex = selectedRow
-                self.postalAddressView.setCityNameLabelTo(cityName: cityName)
-            }
-        case .none:
-            break
-        }
-        
-        self.pickingStatus = .none
-        self.postalAddressPickerViewDelegateAndDataSource.setPickingStatus(status: .none)
-        self.postalAddressView.hidePickerView()
-        self.postalAddressView.hideConfirmButton()
-        self.postalAddressView.hideShadowView()
     }
 }
