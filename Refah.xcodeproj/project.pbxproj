@@ -703,6 +703,7 @@
 				0C552AB42A23B89600B21566 /* UploadPhotoButtonsTouchUpInsideDelegate.swift in Sources */,
 				0CA3DF5429FC38E80059DEB5 /* ChooseBankAccountsViewController.swift in Sources */,
 				0C895D622A23C39800E8C7B0 /* NationalCardViewProtocol.swift in Sources */,
+				0C55AC7B2A309C2A003778D0 /* PostalAddressViewProtocol.swift in Sources */,
 				0C55AC702A2F43DC003778D0 /* PostalAddressPickerViewDelegateAndDataSource.swift in Sources */,
 				0CA3DF5729FC526A0059DEB5 /* BankAccountTableViewCell.swift in Sources */,
 				0C2582E32A20EDA70064BD7A /* RegistrationFlowView_NextButton.swift in Sources */,
