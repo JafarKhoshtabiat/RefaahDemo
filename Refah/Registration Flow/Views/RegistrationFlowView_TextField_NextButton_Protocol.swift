@@ -14,4 +14,5 @@ protocol RegistrationFlowView_TextField_NextButton_Protocol: RegistrationFlowVie
     var textFieldEditingChangedDelegate: TextFieldEditingChangedDelegate? { get set }
     
     func textFieldEditingChanged(_ textField: UITextField)
+    func updateTextFieldTopConstraint(newConstraint: NSLayoutConstraint)
 }
