@@ -274,14 +274,20 @@ class PostalAddressView: RegistrationFlowView_TextField_ValidatoinLabel_NextButt
 }
 
 extension PostalAddressView {
-    @objc func statesButtonTouchUpInside() {
+    @objc private func statesButtonTouchUpInside() {
         self.postalAddressButtonsTouchUpInsideDelegate?.statesButtonDidTouchUpInside()
     }
     
-    @objc func citiesButtonTouchUpInside() {
+    @objc private func citiesButtonTouchUpInside() {
         self.postalAddressButtonsTouchUpInsideDelegate?.citiesButtonDidTouchUpInside()
     }
-        
+    
+    @objc private func confirmButtonTouchUpInside() {
+        self.postalAddressButtonsTouchUpInsideDelegate?.confirmButtonDidTouchUpInside()
+    }
+}
+
+extension PostalAddressView: PostalAddressViewProtocol {
     func resetCityNameLabel() {
         self.cityNameLabel.text = "نام شهر"
     }
@@ -320,10 +326,6 @@ extension PostalAddressView {
     
     func hideConfirmButton() {
         self.confirmButton.isHidden = true
-    }
-    
-    @objc func confirmButtonTouchUpInside() {
-        self.postalAddressButtonsTouchUpInsideDelegate?.confirmButtonDidTouchUpInside()
     }
     
     func getSelectedRowInPickerView() -> Int {

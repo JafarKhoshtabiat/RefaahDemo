@@ -47,6 +47,7 @@
 		0C55AC722A2FF9F7003778D0 /* PostalAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC712A2FF9F7003778D0 /* PostalAddress.swift */; };
 		0C55AC742A3088F3003778D0 /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC732A3088F3003778D0 /* MyError.swift */; };
 		0C55AC762A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC752A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift */; };
+		0C55AC7B2A309C2A003778D0 /* PostalAddressViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC7A2A309C2A003778D0 /* PostalAddressViewProtocol.swift */; };
 		0C5A1A502A00F973007B3008 /* PostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A1A4F2A00F973007B3008 /* PostalAddressViewController.swift */; };
 		0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */; };
 		0C7D8EB329FD8CC600D4291F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D8EB229FD8CC600D4291F /* Colors.xcassets */; };
@@ -126,6 +127,7 @@
 		0C55AC712A2FF9F7003778D0 /* PostalAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddress.swift; sourceTree = "<group>"; };
 		0C55AC732A3088F3003778D0 /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
 		0C55AC752A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressButtonsTouchUpInsideDelegate.swift; sourceTree = "<group>"; };
+		0C55AC7A2A309C2A003778D0 /* PostalAddressViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressViewProtocol.swift; sourceTree = "<group>"; };
 		0C5A1A4F2A00F973007B3008 /* PostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressViewController.swift; sourceTree = "<group>"; };
 		0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCodeViewController.swift; sourceTree = "<group>"; };
 		0C7D8EB229FD8CC600D4291F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				0C13427A2A24A1320044C88B /* PostalAddressView.swift */,
+				0C55AC7A2A309C2A003778D0 /* PostalAddressViewProtocol.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

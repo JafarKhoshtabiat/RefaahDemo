@@ -8,8 +8,7 @@
 import UIKit
 
 class PostalAddressViewController: UIViewController {
-    private var postalAddressView = PostalAddressView()
-    // private var postalAddressView: SomeProtocol = PostalAddressView()
+    private var postalAddressView: PostalAddressViewProtocol = PostalAddressView()
     
     var states: [State]?
     var cities: [City]?
