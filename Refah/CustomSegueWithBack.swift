@@ -9,10 +9,8 @@ import UIKit
 
 class CustomSegueWithBack: UIStoryboardSegue {
     override func perform() {
-        let toViewController = self.destination
-        let fromViewController = self.source
-        let containerView = fromViewController.view.superview
-        containerView?.addSubview(toViewController.view)
-        fromViewController.present(toViewController, animated: true)
+        let source = self.source
+        let destination = self.destination
+        source.present(destination, animated: true)
     }
 }
