@@ -48,6 +48,12 @@
 		0C55AC742A3088F3003778D0 /* MyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC732A3088F3003778D0 /* MyError.swift */; };
 		0C55AC762A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC752A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift */; };
 		0C55AC7B2A309C2A003778D0 /* PostalAddressViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC7A2A309C2A003778D0 /* PostalAddressViewProtocol.swift */; };
+		0C55AC9E2A31F73F003778D0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC9D2A31F73F003778D0 /* LoginView.swift */; };
+		0C55ACA02A32B3C5003778D0 /* LoginScreenTextFieldTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55AC9F2A32B3C5003778D0 /* LoginScreenTextFieldTag.swift */; };
+		0C55ACA22A32BAD7003778D0 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55ACA12A32BAD7003778D0 /* LoginViewProtocol.swift */; };
+		0C55ACA42A33A1AA003778D0 /* ShadowViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55ACA32A33A1AA003778D0 /* ShadowViewProtocol.swift */; };
+		0C55ACA62A346F79003778D0 /* LoginViewTextFieldsEditingChangedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55ACA52A346F79003778D0 /* LoginViewTextFieldsEditingChangedDelegate.swift */; };
+		0C55ACA82A346FA4003778D0 /* LoginViewButtonsTouchUpInsideDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55ACA72A346FA4003778D0 /* LoginViewButtonsTouchUpInsideDelegate.swift */; };
 		0C5A1A502A00F973007B3008 /* PostalAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A1A4F2A00F973007B3008 /* PostalAddressViewController.swift */; };
 		0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */; };
 		0C7D8EB329FD8CC600D4291F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D8EB229FD8CC600D4291F /* Colors.xcassets */; };
@@ -128,6 +134,12 @@
 		0C55AC732A3088F3003778D0 /* MyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyError.swift; sourceTree = "<group>"; };
 		0C55AC752A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressButtonsTouchUpInsideDelegate.swift; sourceTree = "<group>"; };
 		0C55AC7A2A309C2A003778D0 /* PostalAddressViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressViewProtocol.swift; sourceTree = "<group>"; };
+		0C55AC9D2A31F73F003778D0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0C55AC9F2A32B3C5003778D0 /* LoginScreenTextFieldTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenTextFieldTag.swift; sourceTree = "<group>"; };
+		0C55ACA12A32BAD7003778D0 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
+		0C55ACA32A33A1AA003778D0 /* ShadowViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowViewProtocol.swift; sourceTree = "<group>"; };
+		0C55ACA52A346F79003778D0 /* LoginViewTextFieldsEditingChangedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTextFieldsEditingChangedDelegate.swift; sourceTree = "<group>"; };
+		0C55ACA72A346FA4003778D0 /* LoginViewButtonsTouchUpInsideDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewButtonsTouchUpInsideDelegate.swift; sourceTree = "<group>"; };
 		0C5A1A4F2A00F973007B3008 /* PostalAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalAddressViewController.swift; sourceTree = "<group>"; };
 		0C5C7C6229FF11F600BF9D74 /* NationalCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalCodeViewController.swift; sourceTree = "<group>"; };
 		0C7D8EB229FD8CC600D4291F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -355,8 +367,8 @@
 		0C53EAEE2A0B91F5003F8E5B /* Login Flow */ = {
 			isa = PBXGroup;
 			children = (
+				0C55AC9C2A31F4E0003778D0 /* Login Screen */,
 				0C53EAEF2A0B921F003F8E5B /* DummyViewController.swift */,
-				0CA3372329F9D31000A40E39 /* LoginViewController.swift */,
 			);
 			path = "Login Flow";
 			sourceTree = "<group>";
@@ -391,6 +403,43 @@
 				0C55AC712A2FF9F7003778D0 /* PostalAddress.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0C55AC9C2A31F4E0003778D0 /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0C55ACAB2A347008003778D0 /* Views */,
+				0C55ACAA2A346FFE003778D0 /* Controllers */,
+				0C55ACA92A346FF7003778D0 /* Models */,
+			);
+			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		0C55ACA92A346FF7003778D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C55AC9F2A32B3C5003778D0 /* LoginScreenTextFieldTag.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0C55ACAA2A346FFE003778D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3372329F9D31000A40E39 /* LoginViewController.swift */,
+				0C55ACA52A346F79003778D0 /* LoginViewTextFieldsEditingChangedDelegate.swift */,
+				0C55ACA72A346FA4003778D0 /* LoginViewButtonsTouchUpInsideDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0C55ACAB2A347008003778D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C55AC9D2A31F73F003778D0 /* LoginView.swift */,
+				0C55ACA12A32BAD7003778D0 /* LoginViewProtocol.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0C7D8EB429FDAEDE00D4291F /* Registration Flow */ = {
@@ -503,6 +552,7 @@
 				0C1BCEF829FE715400E805B3 /* CustomSegueWithBack.swift */,
 				0C334A4B2A2DD495005A21ED /* ConfigurationConstants.swift */,
 				0C55AC732A3088F3003778D0 /* MyError.swift */,
+				0C55ACA32A33A1AA003778D0 /* ShadowViewProtocol.swift */,
 			);
 			path = Refah;
 			sourceTree = "<group>";
@@ -669,6 +719,7 @@
 				0C552AB02A23B83A00B21566 /* NationalCardPhotoProtocol.swift in Sources */,
 				0C55AC762A30891B003778D0 /* PostalAddressButtonsTouchUpInsideDelegate.swift in Sources */,
 				0C5C7C6329FF11F600BF9D74 /* NationalCodeViewController.swift in Sources */,
+				0C55ACA02A32B3C5003778D0 /* LoginScreenTextFieldTag.swift in Sources */,
 				0CAFB9262A1EC6CE002F0C72 /* extension+UIColor.swift in Sources */,
 				0C25830C2A22B4BD0064BD7A /* OneTimeCodeViewProtocol.swift in Sources */,
 				0C2583142A2342300064BD7A /* NationalCardView.swift in Sources */,
@@ -676,6 +727,8 @@
 				0C2582E52A212B6D0064BD7A /* RegistrationFlowNextDelegate.swift in Sources */,
 				0C5A1A502A00F973007B3008 /* PostalAddressViewController.swift in Sources */,
 				0CAFB9282A1ECD98002F0C72 /* LaunchViewWithProgressViewProtocol.swift in Sources */,
+				0C55AC9E2A31F73F003778D0 /* LoginView.swift in Sources */,
+				0C55ACA22A32BAD7003778D0 /* LoginViewProtocol.swift in Sources */,
 				0C25830F2A22BB000064BD7A /* NationalCodeView.swift in Sources */,
 				0C2582FE2A21F76F0064BD7A /* RegistrationFlowView_FirstResponderTextField_ValidatoinLabel_NextButton_Protocol.swift in Sources */,
 				0C2582FA2A21EF5D0064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton_Protocol.swift in Sources */,
@@ -693,6 +746,7 @@
 				0CA3DF5A29FC57FB0059DEB5 /* SetPasswordViewController.swift in Sources */,
 				0C2582E72A212EF90064BD7A /* RegistrationFlowView_TextField_NextButton_Protocol.swift in Sources */,
 				0C55AC662A2F40B2003778D0 /* State.swift in Sources */,
+				0C55ACA82A346FA4003778D0 /* LoginViewButtonsTouchUpInsideDelegate.swift in Sources */,
 				0C552AB22A23B86200B21566 /* NationalCardPhoto.swift in Sources */,
 				0C55AC6C2A2F4325003778D0 /* StatesOrCitiesRetrievalDelegateProtocol.swift in Sources */,
 				0C55AC742A3088F3003778D0 /* MyError.swift in Sources */,
@@ -707,8 +761,10 @@
 				0C55AC702A2F43DC003778D0 /* PostalAddressPickerViewDelegateAndDataSource.swift in Sources */,
 				0CA3DF5729FC526A0059DEB5 /* BankAccountTableViewCell.swift in Sources */,
 				0C2582E32A20EDA70064BD7A /* RegistrationFlowView_NextButton.swift in Sources */,
+				0C55ACA42A33A1AA003778D0 /* ShadowViewProtocol.swift in Sources */,
 				0CA3DF5029FC330D0059DEB5 /* NewAccountCreatedViewController.swift in Sources */,
 				0C2582FC2A21EF970064BD7A /* RegistrationFlowView_TextField_ValidatoinLabel_NextButton.swift in Sources */,
+				0C55ACA62A346F79003778D0 /* LoginViewTextFieldsEditingChangedDelegate.swift in Sources */,
 				0C1BCEF729FE712B00E805B3 /* CustomSegue.swift in Sources */,
 				0CA3372229F9AC1E00A40E39 /* RegistrationStatusViewController.swift in Sources */,
 				0C2582F62A21E07E0064BD7A /* PhoneNumberView.swift in Sources */,
