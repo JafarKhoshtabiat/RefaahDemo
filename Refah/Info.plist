@@ -27,5 +27,7 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSFaceIDUsageDescription</key>
+	<string>This App uses Face ID for authentication</string>
 </dict>
 </plist>
