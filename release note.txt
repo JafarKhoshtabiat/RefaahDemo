@@ -1,0 +1,26 @@
+List of changes in order to refactor the previous code:
+
+break the app into 3 flows: 
+   - Loading&Status
+   - Registration
+   - Login
+
+each flow consists of several screens. by breaking this screens into small models, views and controllers, it's possible to refrence any issue or possible bug in a few moments. ofcourse models, views or controllers that can be reused, must be restructured so they fit in the abstracttion of this context.
+
+
+
+
+
+
+
+
+
+--------------
+DarkGrayishBlue -> FuelTown
+Flame Hawkfish  -> FlameHawkfish
+GreenJungle     -> Herbal
+Trout           -> ExtinctVolcano
+-------------
+constraints order:
+
+[topConstraint, rightConstraint, bottomConstraint, leftConstraint, hightConstraint, widthConstraint, centerYConstraint, centerXConstraint]
